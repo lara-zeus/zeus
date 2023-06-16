@@ -21,12 +21,20 @@ Next, you must update the values of the DB_* entries in .env so they match your 
 php artisan migrate
 ```
 
-## create the first user:
+## Create the first user:
 you can create the admin user using the command:
 
 ```
 php artisan make:filament-user
 ```
+
+## Configuration:
+
+### Layout
+- create your first layout and set the slug in the 'zeus-rain' config file.
+- create your navigation and set the slug in the 'zeus-rain' config file.
+
+## For more details
 
 * website: https://larazeus.com/
 * demo: https://demo.larazeus.com/
