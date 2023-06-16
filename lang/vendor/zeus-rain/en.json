@@ -1,0 +1,19 @@
+{
+  "id": "id",
+  "user": "user name",
+  "Edit": "Edit",
+  "Delete": "Delete",
+  "Layout": "Layout",
+  "Layouts": "Layouts",
+  "add widget": "add widget",
+  "saved successfully": "saved successfully",
+  "top": "top",
+  "right": "right",
+  "middle": "middle",
+  "left": "left",
+  "bottom": "bottom",
+  "title": "title",
+  "slug": "slug",
+  "create layout": "create layout",
+  "edit layout": "edit layout"
+}
