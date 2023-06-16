@@ -32,7 +32,7 @@ php artisan make:filament-user
 
 ### Layout
 - create your first layout and set the slug in the 'zeus-rain' config file.
-- create your navigation and set the slug in the 'zeus-rain' config file.
+- create your navigation and set the slug in the 'zeus' config file.
 
 ## For more details
 
