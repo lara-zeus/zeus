@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the widgets.
      */
-    'path' => '/',
+    'path' => '/site',
 
     /**
      * the middleware you want to apply on all the blogs routes

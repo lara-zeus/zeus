@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8565272b0dfcb40edd429133581c4f65",
+    "content-hash": "2c401d2ba91871e7663f2a668e837526",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -1186,28 +1186,28 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.6",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "d9d313a36c872fd6ee06d9a6cbcf713eaa40f024"
+                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/d9d313a36c872fd6ee06d9a6cbcf713eaa40f024",
-                "reference": "d9d313a36c872fd6ee06d9a6cbcf713eaa40f024",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
+                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^10",
+                "doctrine/coding-standard": "^11.0",
                 "phpstan/phpstan": "^1.8",
                 "phpstan/phpstan-phpunit": "^1.1",
                 "phpstan/phpstan-strict-rules": "^1.3",
                 "phpunit/phpunit": "^8.5 || ^9.5",
-                "vimeo/psalm": "^4.25"
+                "vimeo/psalm": "^4.25 || ^5.4"
             },
             "type": "library",
             "autoload": {
@@ -1257,7 +1257,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.6"
+                "source": "https://github.com/doctrine/inflector/tree/2.0.8"
             },
             "funding": [
                 {
@@ -1273,7 +1273,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-20T09:10:12+00:00"
+            "time": "2023-06-16T13:40:37+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -2717,16 +2717,16 @@
         },
         {
             "name": "lara-zeus/core",
-            "version": "2.4.12",
+            "version": "2.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "87c8dc2f2cc8e044b3dd15acfdf1b9958b5b342c"
+                "reference": "c6c318007d26ef89b8ae2c17b1b047f8d06cc6d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/87c8dc2f2cc8e044b3dd15acfdf1b9958b5b342c",
-                "reference": "87c8dc2f2cc8e044b3dd15acfdf1b9958b5b342c",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/c6c318007d26ef89b8ae2c17b1b047f8d06cc6d0",
+                "reference": "c6c318007d26ef89b8ae2c17b1b047f8d06cc6d0",
                 "shasum": ""
             },
             "require": {
@@ -2789,7 +2789,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/core/issues",
-                "source": "https://github.com/lara-zeus/core/tree/2.4.12"
+                "source": "https://github.com/lara-zeus/core/tree/2.4.14"
             },
             "funding": [
                 {
@@ -2797,7 +2797,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T03:56:39+00:00"
+            "time": "2023-06-16T16:43:16+00:00"
         },
         {
             "name": "lara-zeus/rain",
@@ -2878,16 +2878,16 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "2.4.6",
+            "version": "2.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "722a90d4dc84be3d2cb0c809a4b78f120640845b"
+                "reference": "343a42d65077a12ac624f5e7b890e25f48a931ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/722a90d4dc84be3d2cb0c809a4b78f120640845b",
-                "reference": "722a90d4dc84be3d2cb0c809a4b78f120640845b",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/343a42d65077a12ac624f5e7b890e25f48a931ea",
+                "reference": "343a42d65077a12ac624f5e7b890e25f48a931ea",
                 "shasum": ""
             },
             "require": {
@@ -2899,7 +2899,7 @@
                 "lara-zeus/core": "^2.4",
                 "mohamedsabil83/filament-forms-tinyeditor": "^1.5",
                 "php": "^8.0",
-                "ryangjchandler/filament-navigation": "^0.5",
+                "ryangjchandler/filament-navigation": "dev-with-rtl",
                 "spatie/laravel-medialibrary": "^10.0.0",
                 "spatie/laravel-sluggable": "^3.3",
                 "spatie/laravel-tags": "^4.0"
@@ -2936,16 +2936,17 @@
             ],
             "authors": [
                 {
-                    "name": "Ashraf Monshi",
-                    "email": "wh7r.com@gmail.com",
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
                     "role": "Owner"
                 }
             ],
-            "description": "simple packages to create and manage forms for your users",
+            "description": "Lara-zeus sky is simple CMS for your website. it include posts, pages, tags, and categories.",
             "homepage": "https://larazeus.com",
             "keywords": [
                 "Laravel CMS",
                 "cms",
+                "filamentphp",
                 "lara-zeus",
                 "laravel",
                 "menu",
@@ -2958,7 +2959,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.6"
+                "source": "https://github.com/lara-zeus/sky/tree/2.4.17"
             },
             "funding": [
                 {
@@ -2966,20 +2967,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-29T13:12:53+00:00"
+            "time": "2023-06-16T16:49:22+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.4.12",
+            "version": "2.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "e77736ec5a82ed7f5df0c383b83e60e4e4cf7200"
+                "reference": "7f554f53de26bc67fe1e4dc95273cc4d96169874"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/e77736ec5a82ed7f5df0c383b83e60e4e4cf7200",
-                "reference": "e77736ec5a82ed7f5df0c383b83e60e4e4cf7200",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/7f554f53de26bc67fe1e4dc95273cc4d96169874",
+                "reference": "7f554f53de26bc67fe1e4dc95273cc4d96169874",
                 "shasum": ""
             },
             "require": {
@@ -3036,7 +3037,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.12"
+                "source": "https://github.com/lara-zeus/wind/tree/2.4.14"
             },
             "funding": [
                 {
@@ -3044,7 +3045,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T02:03:00+00:00"
+            "time": "2023-06-16T16:49:14+00:00"
         },
         {
             "name": "laravel/framework",
@@ -5816,16 +5817,16 @@
         },
         {
             "name": "ryangjchandler/filament-navigation",
-            "version": "v0.5.0",
+            "version": "dev-with-rtl",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ryangjchandler/filament-navigation.git",
-                "reference": "51d7f4bd1b54f57b1f4f658d54c479aeddf03336"
+                "url": "https://github.com/atmonshi/filament-navigation.git",
+                "reference": "7e1f0cb04ef3bde1801c040723bb68a0a3133743"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ryangjchandler/filament-navigation/zipball/51d7f4bd1b54f57b1f4f658d54c479aeddf03336",
-                "reference": "51d7f4bd1b54f57b1f4f658d54c479aeddf03336",
+                "url": "https://api.github.com/repos/atmonshi/filament-navigation/zipball/7e1f0cb04ef3bde1801c040723bb68a0a3133743",
+                "reference": "7e1f0cb04ef3bde1801c040723bb68a0a3133743",
                 "shasum": ""
             },
             "require": {
@@ -5866,7 +5867,25 @@
                     "RyanChandler\\FilamentNavigation\\Database\\Factories\\": "database/factories"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "RyanChandler\\FilamentNavigation\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest coverage"
+                ],
+                "format": [
+                    "vendor/bin/php-cs-fixer fix --config=.php_cs.dist.php --allow-risky=yes"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -5885,16 +5904,15 @@
                 "ryangjchandler"
             ],
             "support": {
-                "issues": "https://github.com/ryangjchandler/filament-navigation/issues",
-                "source": "https://github.com/ryangjchandler/filament-navigation/tree/v0.5.0"
+                "source": "https://github.com/atmonshi/filament-navigation/tree/with-rtl"
             },
             "funding": [
                 {
-                    "url": "https://github.com/ryangjchandler",
-                    "type": "github"
+                    "type": "github",
+                    "url": "https://github.com/ryangjchandler"
                 }
             ],
-            "time": "2023-02-15T21:40:59+00:00"
+            "time": "2023-04-29T15:14:51+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
@@ -11703,7 +11721,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,

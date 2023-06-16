@@ -36,13 +36,13 @@
                     </a>
                 </div>
 
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    {{--Navigation Links--}}
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex items-center">
+                    Navigation Links
                 </div>
 
             </div>
             <div class="hidden sm:flex sm:items-center sm:ml-6">
-                {{--Account menu and other icons--}}
+                Account menu and other icons
             </div>
         </div>
     </div>
@@ -74,11 +74,11 @@
     </div>
 @endif
 
-<div class="container mx-auto">
+<div class="container mx-auto my-6">
     {{ $slot }}
 </div>
 
-<footer class="bg-gray-100 dark:bg-gray-800 p-6 mt-20 text-center font-light">
+<footer class="bg-gray-100 dark:bg-gray-800 p-6 text-center font-light">
     <a href="https://larazeus.com" target="_blank">
         a gift with ❤️ &nbsp;from @zeus
     </a>
