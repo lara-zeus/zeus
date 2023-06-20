@@ -33,8 +33,8 @@ export default {
         extend: {
             colors: {
                 gray: colors.stone,
-                primary: colors.emerald,
-                secondary: colors.yellow,
+                primary: colors.sky,
+                secondary: colors.blue,
                 danger: colors.red,
                 success: colors.green,
                 warning: colors.yellow,

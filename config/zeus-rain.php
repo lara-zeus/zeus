@@ -52,7 +52,7 @@ return [
     /**
      * the default theme, for now we only have one theme, and soon we will provide more free and premium themes.
      */
-    'theme' => 'zeus',
+    'theme' => 'breeze',
 
     /**
      * Navigation Group Label
