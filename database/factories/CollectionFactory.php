@@ -2,14 +2,13 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use LaraZeus\Bolt\Models\Collection;
 
 class CollectionFactory extends Factory
 {
-    public function getModel(): string
-    {
-        return config('zeus-bolt.models.Collection');
-    }
+    protected $model = Collection::class;
 
     /**
      * Define the model's default state.
@@ -18,11 +17,11 @@ class CollectionFactory extends Factory
      *
      * @throws \JsonException
      */
-    public function definition()
+    public function definition(): array
     {
         return [
             'name' => $this->faker->words(3, true),
-            'user_id' => config('auth.providers.users.model')::factory(),
+            'user_id' => User::factory(),
             'values' => 'abc',
         ];
     }

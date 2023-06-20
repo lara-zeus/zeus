@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('widgets', function (Blueprint $table) {
+        Schema::create('layouts', function (Blueprint $table) {
             $table->id();
             $table->string('user_id');
             $table->string('layout_title');
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('widgets');
+        Schema::dropIfExists('layouts');
     }
 };

@@ -34,7 +34,7 @@ export default {
             colors: {
                 gray: colors.stone,
                 primary: colors.sky,
-                secondary: colors.blue,
+                secondary: colors.pink,
                 danger: colors.red,
                 success: colors.green,
                 warning: colors.yellow,

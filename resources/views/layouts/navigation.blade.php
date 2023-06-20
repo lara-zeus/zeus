@@ -15,17 +15,28 @@
                     <x-nav-link :href="url('dashboard')" :active="request()->is('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-
-                     <x-nav-link :href="url('/')" :active="request()->is('/')">
+                     <x-nav-link :href="url('/')"
+                                 :active="
+                                 request()->is('/') ||
+                                 str(request()->url())->contains('/category/') ||
+                                 str(request()->url())->contains('/post/') ||
+                                 str(request()->url())->contains('/page/') ||
+                                 str(request()->url())->contains('/faq/')
+                                 ">
                         {{ __('Blog') }}
+                    </x-nav-link>
+                    <x-nav-link :href="url('/library')" :active=" str(request()->url())->contains('/library')">
+                        {{ __('Library') }}
+                    </x-nav-link>
+                    <x-nav-link :href="url('/faq')" :active=" str(request()->url())->contains('/faq')">
+                        {{ __('Faq') }}
                     </x-nav-link>
                     <x-nav-link :href="url('contact-us')" :active="request()->is('contact-us')">
                         {{ __('Contact') }}
                     </x-nav-link>
-                    <x-nav-link :href="url('forms')" :active="request()->is('forms')">
+                    <x-nav-link :href="url('forms')" :active="str(request()->url())->contains('/forms')">
                         {{ __('Forms') }}
                     </x-nav-link>
-
                 </div>
             </div>
 

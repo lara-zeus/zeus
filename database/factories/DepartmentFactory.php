@@ -3,19 +3,23 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use LaraZeus\Wind\Models\Department;
 
 class DepartmentFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
+     *
+     * @var string
      */
-    public function getModel(): string
-    {
-        return config('zeus-wind.models.department');
-    }
+    protected $model = Department::class;
 
     /**
      * Define the model's default state.
+     *
+     * @return array
+     *
+     * @throws \JsonException
      */
     public function definition(): array
     {

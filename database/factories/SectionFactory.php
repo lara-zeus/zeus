@@ -3,24 +3,23 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use LaraZeus\Bolt\Models\Form;
+use LaraZeus\Bolt\Models\Section;
 
 class SectionFactory extends Factory
 {
-    public function getModel(): string
-    {
-        return config('zeus-bolt.models.Section');
-    }
+    protected $model = Section::class;
 
     /**
      * Define the model's default state.
      *
      * @return array
      */
-    public function definition()
+    public function definition(): array
     {
         return [
             'name' => $this->faker->words(3, true),
-            'form_id' => config('zeus-bolt.models.Form')::factory(),
+            'form_id' => Form::factory(),
             'ordering' => $this->faker->numberBetween(1, 10),
         ];
     }

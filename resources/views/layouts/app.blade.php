@@ -20,7 +20,7 @@
 
             <!-- Page Heading -->
             @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
+                <header class="bg-gray-50 dark:bg-gray-800 shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
@@ -28,7 +28,7 @@
             @endif
 
             <!-- Page Content -->
-            <main class="max-w-7xl mx-auto">
+            <main class="py-10 max-w-7xl mx-auto">
                 {{ $slot }}
             </main>
         </div>

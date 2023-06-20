@@ -34,6 +34,10 @@ php artisan make:filament-user
 - create your first layout and set the slug in the 'zeus-rain' config file.
 - create your navigation and set the slug in the 'zeus' config file.
 
+## Demo Data
+optionally you can seed the database with default data.
+if you're using custom models you have to change the models calls `$model` in all the Factories.
+
 ## For more details
 
 * website: https://larazeus.com/
