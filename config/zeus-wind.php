@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the contact form homepage.
      */
-    'path' => '/',
+    'path' => '/contact-us',
 
     /**
      * the middleware you want to apply on all the blogs routes

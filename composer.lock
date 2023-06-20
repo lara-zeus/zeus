@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c401d2ba91871e7663f2a668e837526",
+    "content-hash": "aeed63b14e6f19176304a08ddbf9dba2",
     "packages": [
         {
             "name": "akaunting/laravel-money",
@@ -411,6 +411,62 @@
                 }
             ],
             "time": "2023-06-09T15:47:26+00:00"
+        },
+        {
+            "name": "bordoni/phpass",
+            "version": "0.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bordoni/phpass.git",
+                "reference": "12f8f5cc03ebb7efd69554f104afe9aa1aa46e1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bordoni/phpass/zipball/12f8f5cc03ebb7efd69554f104afe9aa1aa46e1a",
+                "reference": "12f8f5cc03ebb7efd69554f104afe9aa1aa46e1a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "replace": {
+                "hautelook/phpass": "0.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Hautelook": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Public Domain"
+            ],
+            "authors": [
+                {
+                    "name": "Solar Designer",
+                    "email": "solar@openwall.com",
+                    "homepage": "http://openwall.com/phpass/"
+                },
+                {
+                    "name": "Gustavo Bordoni",
+                    "email": "gustavo@bordoni.me",
+                    "homepage": "https://bordoni.me"
+                }
+            ],
+            "description": "Portable PHP password hashing framework",
+            "homepage": "http://github.com/bordoni/phpass/",
+            "keywords": [
+                "blowfish",
+                "crypt",
+                "password",
+                "security"
+            ],
+            "support": {
+                "issues": "https://github.com/bordoni/phpass/issues",
+                "source": "https://github.com/bordoni/phpass/tree/0.3.6"
+            },
+            "time": "2012-08-31T00:00:00+00:00"
         },
         {
             "name": "brick/math",
@@ -1543,17 +1599,85 @@
             "time": "2023-01-14T14:17:03+00:00"
         },
         {
-            "name": "filament/filament",
-            "version": "v2.17.48",
+            "name": "fakerphp/faker",
+            "version": "v1.23.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/filamentphp/panels.git",
-                "reference": "dd3655e315e825aaed5c98aaf16ed17f37a7b3db"
+                "url": "https://github.com/FakerPHP/Faker.git",
+                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/panels/zipball/dd3655e315e825aaed5c98aaf16ed17f37a7b3db",
-                "reference": "dd3655e315e825aaed5c98aaf16ed17f37a7b3db",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
+                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0",
+                "psr/container": "^1.0 || ^2.0",
+                "symfony/deprecation-contracts": "^2.2 || ^3.0"
+            },
+            "conflict": {
+                "fzaninotto/faker": "*"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "doctrine/persistence": "^1.3 || ^2.0",
+                "ext-intl": "*",
+                "phpunit/phpunit": "^9.5.26",
+                "symfony/phpunit-bridge": "^5.4.16"
+            },
+            "suggest": {
+                "doctrine/orm": "Required to use Faker\\ORM\\Doctrine",
+                "ext-curl": "Required by Faker\\Provider\\Image to download images.",
+                "ext-dom": "Required by Faker\\Provider\\HtmlLorem for generating random HTML.",
+                "ext-iconv": "Required by Faker\\Provider\\ru_RU\\Text::realText() for generating real Russian text.",
+                "ext-mbstring": "Required for multibyte Unicode string functionality."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "v1.21-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "support": {
+                "issues": "https://github.com/FakerPHP/Faker/issues",
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.23.0"
+            },
+            "time": "2023-06-12T08:44:38+00:00"
+        },
+        {
+            "name": "filament/filament",
+            "version": "v2.17.49",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filamentphp/panels.git",
+                "reference": "ed790092c1df259acb9abf9b131f6afc01aa5224"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filamentphp/panels/zipball/ed790092c1df259acb9abf9b131f6afc01aa5224",
+                "reference": "ed790092c1df259acb9abf9b131f6afc01aa5224",
                 "shasum": ""
             },
             "require": {
@@ -1602,20 +1726,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2023-06-12T14:24:42+00:00"
+            "time": "2023-06-18T13:30:27+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v2.17.48",
+            "version": "v2.17.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
-                "reference": "96a4e3ba9ab42d13e8630f0d37f8b83e8cff9eb2"
+                "reference": "40f4c132489cbb3ce5e5b1c60a327634e2b28862"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/forms/zipball/96a4e3ba9ab42d13e8630f0d37f8b83e8cff9eb2",
-                "reference": "96a4e3ba9ab42d13e8630f0d37f8b83e8cff9eb2",
+                "url": "https://api.github.com/repos/filamentphp/forms/zipball/40f4c132489cbb3ce5e5b1c60a327634e2b28862",
+                "reference": "40f4c132489cbb3ce5e5b1c60a327634e2b28862",
                 "shasum": ""
             },
             "require": {
@@ -1660,11 +1784,11 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2023-06-12T14:24:44+00:00"
+            "time": "2023-06-18T13:29:57+00:00"
         },
         {
             "name": "filament/notifications",
-            "version": "v2.17.48",
+            "version": "v2.17.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
@@ -1717,7 +1841,7 @@
         },
         {
             "name": "filament/spatie-laravel-media-library-plugin",
-            "version": "v2.17.48",
+            "version": "v2.17.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-media-library-plugin.git",
@@ -1754,7 +1878,7 @@
         },
         {
             "name": "filament/spatie-laravel-tags-plugin",
-            "version": "v2.17.48",
+            "version": "v2.17.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-tags-plugin.git",
@@ -1791,7 +1915,7 @@
         },
         {
             "name": "filament/spatie-laravel-translatable-plugin",
-            "version": "v2.17.48",
+            "version": "v2.17.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-translatable-plugin.git",
@@ -1837,7 +1961,7 @@
         },
         {
             "name": "filament/support",
-            "version": "v2.17.48",
+            "version": "v2.17.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
@@ -1888,16 +2012,16 @@
         },
         {
             "name": "filament/tables",
-            "version": "v2.17.48",
+            "version": "v2.17.49",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
-                "reference": "88aef59b52b2643a6536a251794abd3a043e0fc7"
+                "reference": "22507f0b8e338526d41f9e593bd9f91ad46e2d47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/tables/zipball/88aef59b52b2643a6536a251794abd3a043e0fc7",
-                "reference": "88aef59b52b2643a6536a251794abd3a043e0fc7",
+                "url": "https://api.github.com/repos/filamentphp/tables/zipball/22507f0b8e338526d41f9e593bd9f91ad46e2d47",
+                "reference": "22507f0b8e338526d41f9e593bd9f91ad46e2d47",
                 "shasum": ""
             },
             "require": {
@@ -1940,7 +2064,7 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2023-06-12T14:25:06+00:00"
+            "time": "2023-06-18T13:30:19+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -2627,17 +2751,83 @@
             "time": "2022-05-21T17:30:32+00:00"
         },
         {
-            "name": "lara-zeus/bolt",
-            "version": "0.0.41",
+            "name": "jgrossi/corcel",
+            "version": "v7.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "1403624aec92f16518b8c589c04b15211c4e9b72"
+                "url": "https://github.com/corcel/corcel.git",
+                "reference": "eba55da9a8179a868438f09b6f31f95b9bec5f8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/1403624aec92f16518b8c589c04b15211c4e9b72",
-                "reference": "1403624aec92f16518b8c589c04b15211c4e9b72",
+                "url": "https://api.github.com/repos/corcel/corcel/zipball/eba55da9a8179a868438f09b6f31f95b9bec5f8a",
+                "reference": "eba55da9a8179a868438f09b6f31f95b9bec5f8a",
+                "shasum": ""
+            },
+            "require": {
+                "bordoni/phpass": "0.3.*",
+                "fakerphp/faker": "^1.19",
+                "illuminate/database": "^10.0",
+                "illuminate/filesystem": "^10.0",
+                "illuminate/support": "^10.0",
+                "php": "^8.1.0",
+                "thunderer/shortcode": "^0.7.3"
+            },
+            "replace": {
+                "juniorgrossi/corcel": "self.version"
+            },
+            "require-dev": {
+                "dms/phpunit-arraysubset-asserts": "^0.3",
+                "laravel/legacy-factories": "^1.0",
+                "mockery/mockery": "^1.4.4",
+                "orchestra/testbench": "^8.0",
+                "symfony/thanks": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Corcel\\Laravel\\CorcelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Corcel\\": "src/",
+                    "Corcel\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Junior Grossi",
+                    "email": "juniorgro@gmail.com",
+                    "homepage": "http://jgrossi.com"
+                }
+            ],
+            "description": "Use WordPress backend with Laravel or any PHP framework",
+            "homepage": "http://github.com/corcel/corcel",
+            "support": {
+                "issues": "https://github.com/corcel/corcel/issues",
+                "source": "https://github.com/corcel/corcel/tree/v7.0.0"
+            },
+            "time": "2023-06-09T21:06:24+00:00"
+        },
+        {
+            "name": "lara-zeus/bolt",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/bolt.git",
+                "reference": "ea7501f1e0ed672719d1787ab63024cc1ac551f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/ea7501f1e0ed672719d1787ab63024cc1ac551f0",
+                "reference": "ea7501f1e0ed672719d1787ab63024cc1ac551f0",
                 "shasum": ""
             },
             "require": {
@@ -2705,7 +2895,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/bolt/issues",
-                "source": "https://github.com/lara-zeus/bolt/tree/0.0.41"
+                "source": "https://github.com/lara-zeus/bolt/tree/1.0.1"
             },
             "funding": [
                 {
@@ -2713,20 +2903,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-14T14:02:54+00:00"
+            "time": "2023-06-19T01:17:24+00:00"
         },
         {
             "name": "lara-zeus/core",
-            "version": "2.4.14",
+            "version": "2.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/core.git",
-                "reference": "c6c318007d26ef89b8ae2c17b1b047f8d06cc6d0"
+                "reference": "806450f8d55cbc82d6e144426c5c7b30337ad70b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/core/zipball/c6c318007d26ef89b8ae2c17b1b047f8d06cc6d0",
-                "reference": "c6c318007d26ef89b8ae2c17b1b047f8d06cc6d0",
+                "url": "https://api.github.com/repos/lara-zeus/core/zipball/806450f8d55cbc82d6e144426c5c7b30337ad70b",
+                "reference": "806450f8d55cbc82d6e144426c5c7b30337ad70b",
                 "shasum": ""
             },
             "require": {
@@ -2774,7 +2964,7 @@
             "authors": [
                 {
                     "name": "php coder",
-                    "email": "wh7r.com@gmail.com",
+                    "email": "info@larazeus.com",
                     "role": "Owner"
                 }
             ],
@@ -2789,7 +2979,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/core/issues",
-                "source": "https://github.com/lara-zeus/core/tree/2.4.14"
+                "source": "https://github.com/lara-zeus/core/tree/2.4.16"
             },
             "funding": [
                 {
@@ -2797,20 +2987,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T16:43:16+00:00"
+            "time": "2023-06-19T01:00:24+00:00"
         },
         {
             "name": "lara-zeus/rain",
-            "version": "0.0.4",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/rain.git",
-                "reference": "04b813edb28bfa79b0ec9f45ac9ec5f64b883e82"
+                "reference": "d317b44bc29277747d8e604247b035dad45bfe95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/04b813edb28bfa79b0ec9f45ac9ec5f64b883e82",
-                "reference": "04b813edb28bfa79b0ec9f45ac9ec5f64b883e82",
+                "url": "https://api.github.com/repos/lara-zeus/rain/zipball/d317b44bc29277747d8e604247b035dad45bfe95",
+                "reference": "d317b44bc29277747d8e604247b035dad45bfe95",
                 "shasum": ""
             },
             "require": {
@@ -2835,7 +3025,10 @@
                 "laravel": {
                     "providers": [
                         "LaraZeus\\Rain\\RainServiceProvider"
-                    ]
+                    ],
+                    "aliases": {
+                        "Rain": "LaraZeus\\Rain\\Facades\\Rain"
+                    }
                 }
             },
             "autoload": {
@@ -2866,7 +3059,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/rain/issues",
-                "source": "https://github.com/lara-zeus/rain/tree/0.0.4"
+                "source": "https://github.com/lara-zeus/rain/tree/1.0.1"
             },
             "funding": [
                 {
@@ -2874,20 +3067,104 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T03:23:55+00:00"
+            "time": "2023-06-19T01:17:59+00:00"
         },
         {
-            "name": "lara-zeus/sky",
-            "version": "2.4.17",
+            "name": "lara-zeus/rhea",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "343a42d65077a12ac624f5e7b890e25f48a931ea"
+                "url": "https://github.com/lara-zeus/rhea.git",
+                "reference": "8c1056b2c2920bb98219030ab0d631799339e7ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/343a42d65077a12ac624f5e7b890e25f48a931ea",
-                "reference": "343a42d65077a12ac624f5e7b890e25f48a931ea",
+                "url": "https://api.github.com/repos/lara-zeus/rhea/zipball/8c1056b2c2920bb98219030ab0d631799339e7ab",
+                "reference": "8c1056b2c2920bb98219030ab0d631799339e7ab",
+                "shasum": ""
+            },
+            "require": {
+                "jgrossi/corcel": "^7.0",
+                "lara-zeus/sky": "^2.4",
+                "php": "^8.0",
+                "ryangjchandler/filament-navigation": "dev-with-rtl"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^6.0 || ^7.0 || ^8.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Rhea\\RheaServiceProvider"
+                    ],
+                    "aliases": {
+                        "Rhea": "LaraZeus\\Rhea\\RheaFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Rhea\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "migrate your wordpress blog to zeus sky",
+            "homepage": "https://larazeus.com",
+            "keywords": [
+                "Laravel CMS",
+                "cms",
+                "filamentphp",
+                "lara-zeus",
+                "laravel",
+                "menu",
+                "news",
+                "pages",
+                "posts",
+                "sky",
+                "wordpress alternative",
+                "wordpress laravel",
+                "wordpress migrate"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/rhea/issues",
+                "source": "https://github.com/lara-zeus/rhea/tree/1.0.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/atmonshi",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-06-20T04:12:12+00:00"
+        },
+        {
+            "name": "lara-zeus/sky",
+            "version": "2.4.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/sky.git",
+                "reference": "d667217e730bc08bb802e82c512754bb11b6b9d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/d667217e730bc08bb802e82c512754bb11b6b9d1",
+                "reference": "d667217e730bc08bb802e82c512754bb11b6b9d1",
                 "shasum": ""
             },
             "require": {
@@ -2959,7 +3236,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/sky/issues",
-                "source": "https://github.com/lara-zeus/sky/tree/2.4.17"
+                "source": "https://github.com/lara-zeus/sky/tree/2.4.22"
             },
             "funding": [
                 {
@@ -2967,20 +3244,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T16:49:22+00:00"
+            "time": "2023-06-19T01:16:52+00:00"
         },
         {
             "name": "lara-zeus/wind",
-            "version": "2.4.14",
+            "version": "2.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/wind.git",
-                "reference": "7f554f53de26bc67fe1e4dc95273cc4d96169874"
+                "reference": "204ffd1ef0e16d3569c46b31e84a5b3fa92ea2f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/7f554f53de26bc67fe1e4dc95273cc4d96169874",
-                "reference": "7f554f53de26bc67fe1e4dc95273cc4d96169874",
+                "url": "https://api.github.com/repos/lara-zeus/wind/zipball/204ffd1ef0e16d3569c46b31e84a5b3fa92ea2f4",
+                "reference": "204ffd1ef0e16d3569c46b31e84a5b3fa92ea2f4",
                 "shasum": ""
             },
             "require": {
@@ -3037,7 +3314,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lara-zeus/wind/issues",
-                "source": "https://github.com/lara-zeus/wind/tree/2.4.14"
+                "source": "https://github.com/lara-zeus/wind/tree/2.4.16"
             },
             "funding": [
                 {
@@ -3045,7 +3322,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-16T16:49:14+00:00"
+            "time": "2023-06-19T01:16:18+00:00"
         },
         {
             "name": "laravel/framework",
@@ -4767,16 +5044,16 @@
         },
         {
             "name": "openspout/openspout",
-            "version": "v4.14.0",
+            "version": "v4.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/openspout/openspout.git",
-                "reference": "528442c4051c8dfc53c164651156fa616c370931"
+                "reference": "907a2ff042741b1f25b6e636d18ce9d7fc4c8333"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openspout/openspout/zipball/528442c4051c8dfc53c164651156fa616c370931",
-                "reference": "528442c4051c8dfc53c164651156fa616c370931",
+                "url": "https://api.github.com/repos/openspout/openspout/zipball/907a2ff042741b1f25b6e636d18ce9d7fc4c8333",
+                "reference": "907a2ff042741b1f25b6e636d18ce9d7fc4c8333",
                 "shasum": ""
             },
             "require": {
@@ -4790,17 +5067,17 @@
             },
             "require-dev": {
                 "ext-zlib": "*",
-                "friendsofphp/php-cs-fixer": "^3.17.0",
+                "friendsofphp/php-cs-fixer": "^3.18.0",
                 "infection/infection": "^0.27",
                 "phpbench/phpbench": "^1.2.10",
-                "phpstan/phpstan": "^1.10.15",
-                "phpstan/phpstan-phpunit": "^1.3.12",
+                "phpstan/phpstan": "^1.10.19",
+                "phpstan/phpstan-phpunit": "^1.3.13",
                 "phpstan/phpstan-strict-rules": "^1.5.1",
-                "phpunit/phpunit": "^10.1.3"
+                "phpunit/phpunit": "^10.2.2"
             },
             "suggest": {
-                "ext-iconv": "To handle non UTF-8 CSV files (if \"php-intl\" is not already installed or is too limited)",
-                "ext-intl": "To handle non UTF-8 CSV files (if \"iconv\" is not already installed)"
+                "ext-iconv": "To handle non UTF-8 CSV files (if \"php-mbstring\" is not already installed or is too limited)",
+                "ext-mbstring": "To handle non UTF-8 CSV files (if \"iconv\" is not already installed)"
             },
             "type": "library",
             "extra": {
@@ -4844,7 +5121,7 @@
             ],
             "support": {
                 "issues": "https://github.com/openspout/openspout/issues",
-                "source": "https://github.com/openspout/openspout/tree/v4.14.0"
+                "source": "https://github.com/openspout/openspout/tree/v4.15.0"
             },
             "funding": [
                 {
@@ -4856,7 +5133,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-24T09:26:05+00:00"
+            "time": "2023-06-19T07:48:22+00:00"
         },
         {
             "name": "phenx/php-font-lib",
@@ -9026,6 +9303,62 @@
             "time": "2021-09-14T08:27:50+00:00"
         },
         {
+            "name": "thunderer/shortcode",
+            "version": "v0.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thunderer/Shortcode.git",
+                "reference": "a4fee30613bd46efb421f8305aff0466a3268a99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thunderer/Shortcode/zipball/a4fee30613bd46efb421f8305aff0466a3268a99",
+                "reference": "a4fee30613bd46efb421f8305aff0466a3268a99",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.1",
+                "symfony/yaml": ">=2.0"
+            },
+            "suggest": {
+                "ext-dom": "if you want to use XML serializer",
+                "ext-json": "if you want to use JSON serializer",
+                "symfony/yaml": "if you want to use YAML serializer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Thunder\\Shortcode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomasz Kowalczyk",
+                    "email": "tomasz@kowalczyk.cc"
+                }
+            ],
+            "description": "Advanced shortcode (BBCode) parser and engine for PHP",
+            "keywords": [
+                "bbcode",
+                "engine",
+                "library",
+                "parser",
+                "shortcode"
+            ],
+            "support": {
+                "issues": "https://github.com/thunderer/Shortcode/issues",
+                "source": "https://github.com/thunderer/Shortcode/tree/v0.7.5"
+            },
+            "time": "2022-01-13T18:53:33+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.6",
             "source": {
@@ -9296,74 +9629,6 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "fakerphp/faker",
-            "version": "v1.23.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
-                "reference": "e3daa170d00fde61ea7719ef47bb09bb8f1d9b01",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4 || ^8.0",
-                "psr/container": "^1.0 || ^2.0",
-                "symfony/deprecation-contracts": "^2.2 || ^3.0"
-            },
-            "conflict": {
-                "fzaninotto/faker": "*"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.4.1",
-                "doctrine/persistence": "^1.3 || ^2.0",
-                "ext-intl": "*",
-                "phpunit/phpunit": "^9.5.26",
-                "symfony/phpunit-bridge": "^5.4.16"
-            },
-            "suggest": {
-                "doctrine/orm": "Required to use Faker\\ORM\\Doctrine",
-                "ext-curl": "Required by Faker\\Provider\\Image to download images.",
-                "ext-dom": "Required by Faker\\Provider\\HtmlLorem for generating random HTML.",
-                "ext-iconv": "Required by Faker\\Provider\\ru_RU\\Text::realText() for generating real Russian text.",
-                "ext-mbstring": "Required for multibyte Unicode string functionality."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "v1.21-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Faker\\": "src/Faker/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Zaninotto"
-                }
-            ],
-            "description": "Faker is a PHP library that generates fake data for you.",
-            "keywords": [
-                "data",
-                "faker",
-                "fixtures"
-            ],
-            "support": {
-                "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.23.0"
-            },
-            "time": "2023-06-12T08:44:38+00:00"
-        },
         {
             "name": "filp/whoops",
             "version": "2.15.2",
