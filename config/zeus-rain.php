@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the layout page.
      */
-    'path' => '/home',
+    'path' => '/dashboard',
 
     /**
      * the middleware you want to apply on all the blogs routes
@@ -23,7 +23,8 @@ return [
      * you can use the default layout as a starting point for your blog.
      * however, if you're already using your own component, just set the path here.
      */
-    'layout' => 'zeus::components.app',
+    'layout' => 'layouts.app',
+    //'layout' => 'zeus::components.app',
 
     /**
      * set the default upload options for departments logo.

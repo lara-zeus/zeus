@@ -1,3 +1,3 @@
 <div class="py-4">
-    {!! $data['data']['content'] !!}
+    {!! $data['content'] !!}
 </div>

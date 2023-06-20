@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the blogs homepage.
      */
-    'path' => 'blog',
+    'path' => '/',
 
     /**
      * the middleware you want to apply on all the blogs routes
@@ -78,7 +78,8 @@ return [
      * you can use the default layout as a starting point for your blog.
      * however, if you're already using your own component, just set the path here.
      */
-    'layout' => 'zeus::components.app',
+    'layout' => 'layouts.app',
+    //'layout' => 'zeus::components.app',
 
     /**
      * the default theme, for now we only have one theme, and soon we will provide more free and premium themes.

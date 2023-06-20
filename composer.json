@@ -9,7 +9,6 @@
         "guzzlehttp/guzzle": "^7.2",
         "lara-zeus/bolt": "^1.0",
         "lara-zeus/rain": "^1.0",
-        "lara-zeus/rhea": "^1.0",
         "lara-zeus/sky": "^2.4",
         "lara-zeus/wind": "^2.4",
         "laravel/framework": "^10.10",
@@ -18,11 +17,13 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+        "laravel/breeze": "^1.21",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
-        "phpunit/phpunit": "^10.1",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {

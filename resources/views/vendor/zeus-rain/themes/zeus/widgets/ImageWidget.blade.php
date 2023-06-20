@@ -1,5 +1,5 @@
 <div class="py-4">
-    @if(isset($data['data']['url']))
-        <img src="{{ asset('storage/'.$data['data']['url']) }}">
+    @if(isset($data['url']))
+        <img src="{{ asset('storage/'.$data['url']) }}">
     @endif
 </div>
