@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://larazeus.com"><img alt="lara zeus" src="[https://larazeus.com/images/zeus-bannar.png](https://larazeus.com/images/zeus-kit.png)" /></a>
+[![Zeus Kit](https://larazeus.com/images/zeus-kit.png)](https://larazeus.com)
 </p>
 
 <p align="center">
