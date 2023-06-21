@@ -57,7 +57,7 @@ return [
     /**
      * Navigation Group Label
      */
-    'navigation_group_label' => 'rain',
+    'navigation_group_label' => '',
 
     /**
      * default layout slug

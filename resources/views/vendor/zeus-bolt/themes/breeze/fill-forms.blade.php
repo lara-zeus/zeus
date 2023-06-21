@@ -1,4 +1,4 @@
-<div>
+<div class="px-4">
     <x-slot name="header">
         <h2>{{ $zeusForm->name ?? '' }}</h2>
         <p class="text-gray-400 text-mdd my-2">{{ $zeusForm->description ?? '' }}</p>

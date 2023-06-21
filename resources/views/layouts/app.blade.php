@@ -13,6 +13,13 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        @livewireStyles
+        @stack('styles')
+        <style>
+            * {font-family: 'KoHo', 'Almarai', sans-serif;}
+            [x-cloak] {display: none !important;}
+        </style>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
@@ -36,5 +43,10 @@
         <main class="py-10 max-w-7xl mx-auto text-center">
             © 2023 {{ config('app.name') }}. All rights reserved.
         </main>
+
+        @stack('scripts')
+        @livewireScripts
+        @livewire('notifications')
+
     </body>
 </html>

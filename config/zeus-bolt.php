@@ -66,5 +66,5 @@ return [
     /**
      * Navigation Group Label
      */
-    'navigation_group_label' => 'Bolt',
+    'navigation_group_label' => 'Forms',
 ];
