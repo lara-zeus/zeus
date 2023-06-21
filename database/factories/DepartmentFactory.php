@@ -28,6 +28,7 @@ class DepartmentFactory extends Factory
             'is_active' => $this->faker->numberBetween(0, 1),
             'desc' => $this->faker->words(5, true),
             'slug' => $this->faker->slug,
+            'logo' => 'https://picsum.photos/150/150?random=' . $this->faker->randomNumber(),
         ];
     }
 }

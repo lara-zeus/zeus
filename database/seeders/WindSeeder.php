@@ -17,7 +17,7 @@ class WindSeeder extends Seeder
                 'is_active' => 1,
                 'desc' => 'any help with Customer service',
                 'slug' => 'customer-service',
-                'logo' => 'layouts/d8snXpNRmcxggHsotkH9p8lxZQ2zeA-metaRGVtby5wbmc=-.png',
+                'logo' => 'https://picsum.photos/150/150?random=1',
                 'created_at' => now(),
             ]);
 
@@ -28,7 +28,7 @@ class WindSeeder extends Seeder
                 'is_active' => 1,
                 'desc' => 'any help with Sales',
                 'slug' => 'sales',
-                //'logo' => 'new-page',
+                'logo' => 'https://picsum.photos/150/150?random=2',
                 'created_at' => now(),
             ]);
 
