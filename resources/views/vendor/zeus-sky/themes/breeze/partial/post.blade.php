@@ -1,24 +1,24 @@
-<article class="mt-6" itemscope itemtype="https://schema.org/Movie">
-    <div class="px-6 pb-6 mx-auto bg-white dark:bg-gray-800 rounded-[2rem] rounded-bl-none rounded-tr-none shadow-sm">
-        <div class="flex items-center justify-between">
-            <span class="font-light text-sm text-gray-600 dark:text-gray-200">{{ optional($post->published_at)->diffForHumans() ?? '' }}</span>
-            <div>
-                @unless ($post->tags->isEmpty())
-                    @each($theme.'.partial.category', $post->tags->where('type','category'), 'category')
-                @endunless
-            </div>
-        </div>
-        <aside class="mt-2">
+<x-zeus.card>
+    <article class="space-y-4" itemscope itemtype="https://schema.org/Movie">
+        <aside>
             <a href="{{ route('post',$post->slug) }}" class="text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-200 hover:underline">
                 {!! $post->title !!}
             </a>
+            <div class="flex items-center justify-between">
+                <span class="font-light text-sm text-gray-500 dark:text-gray-200">{{ optional($post->published_at)->diffForHumans() ?? '' }}</span>
+                <div>
+                    @unless ($post->tags->isEmpty())
+                        @each($theme.'.partial.category', $post->tags->where('type','category'), 'category')
+                    @endunless
+                </div>
+            </div>
             @if($post->description !== null)
                 <p class="mt-2 text-gray-600 dark:text-gray-200">
                     {!! $post->description !!}
                 </p>
             @endif
         </aside>
-        <div class="flex items-center justify-between mt-4">
+        <div class="flex items-center justify-between">
             <a href="{{ route('post',$post->slug) }}" class="text-blue-500 dark:text-blue-200 hover:underline">Read more</a>
             <div>
                 <a class="flex items-center gap-2">
@@ -27,5 +27,6 @@
                 </a>
             </div>
         </div>
-    </div>
-</article>
+    </article>
+</x-zeus.card>
+

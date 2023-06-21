@@ -32,5 +32,9 @@
                 {{ $slot }}
             </main>
         </div>
+
+        <main class="py-10 max-w-7xl mx-auto text-center">
+            © 2023 {{ config('app.name') }}. All rights reserved.
+        </main>
     </body>
 </html>

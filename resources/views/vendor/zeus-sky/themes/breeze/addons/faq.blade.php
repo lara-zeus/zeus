@@ -6,18 +6,14 @@
             </h2>
             <div class="space-y-8 mt-10">
                 @foreach($faqs as $faq)
-                    <div class="bg-white dark:bg-gray-800 rounded-[2rem] rounded-bl-none rounded-tr-none shadow-sm group">
-                        <h5>
-                            <a class="flex items-center justify-between w-full px-6 py-4 text-xl font-medium tracking-tight text-secondary-600 dark:text-secondary-200">
-                                <span class="underline">
-                                    {{ $faq->question }}
-                                </span>
-                            </a>
-                        </h5>
+                    <x-zeus.card>
+                        <x-slot name="title">
+                            {{ $faq->question }}
+                        </x-slot>
                         <div class="pb-4 px-6 prose dark:prose-invert max-w-none">
                             {!! $faq->answer !!}
                         </div>
-                    </div>
+                    </x-zeus.card>
                 @endforeach
             </div>
         </div>

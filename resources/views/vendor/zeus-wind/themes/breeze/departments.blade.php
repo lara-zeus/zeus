@@ -12,11 +12,11 @@
         @if(config('zeus-wind.enableDepartments'))
             @php $departments = config('zeus-wind.models.department')::whereIsActive(1)->orderBy('ordering')->get(); @endphp
             @if($departments->isEmpty())
-                <x-filament::card>
+                <x-zeus.card>
                     <div class="text-red-400">
                         {{ __('no departments available!') }}
                     </div>
-                </x-filament::card>
+                </x-zeus.card>
                 <input type="hidden" name="{{ $getStatePath() }}" wire:model="{{ $getStatePath() }}" value="{{ config('zeus-wind.defaultDepartmentId') }}">
             @else
                 <div class="max-w-4xl mx-auto text-primary-600 -mb-4 mt-4">
