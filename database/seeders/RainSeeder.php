@@ -47,7 +47,7 @@ class RainSeeder extends Seeder
                                 'title' => null,
                                 'sort' => 1,
                                 'widget' => "LaraZeus\Rain\Widgets\Classes\ImageWidget",
-                                'url' => 'layouts/d8snXpNRmcxggHsotkH9p8lxZQ2zeA-metaRGVtby5wbmc=-.png',
+                                'url' => 'https://picsum.photos/600/400?random=1',
                                 'alt' => 'alt',
                             ],
                         ],

@@ -19,7 +19,7 @@ class LibraryFactory extends Factory
             'title' => $this->faker->word,
             'description' => $this->faker->sentence,
             'type' => $this->faker->randomElement(array_keys(config('zeus-sky.library_types'))),
-            'file_path' => 'https://picsum.photos/200/300',
+            'file_path' => 'https://picsum.photos/1200/1200?random='.$this->faker->randomNumber(),
         ];
     }
 }
