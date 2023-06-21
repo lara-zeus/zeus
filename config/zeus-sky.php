@@ -4,7 +4,7 @@ return [
     /**
      * set the default path for the blogs homepage.
      */
-    'path' => '/',
+    'path' => '/blog',
 
     /**
      * the middleware you want to apply on all the blogs routes
