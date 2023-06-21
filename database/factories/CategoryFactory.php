@@ -12,7 +12,6 @@ class CategoryFactory extends Factory
     /**
      * Define the model's default state.
      *
-     * @return array
      *
      * @throws \JsonException
      */

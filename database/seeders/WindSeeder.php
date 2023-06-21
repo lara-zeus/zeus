@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use LaraZeus\Wind\Models\Department;
 use LaraZeus\Wind\Models\Letter;
 
 class WindSeeder extends Seeder
@@ -35,7 +34,7 @@ class WindSeeder extends Seeder
 
         Letter::factory()
             ->count(5)
-            ->state(function (array $attributes) use($department) {
+            ->state(function (array $attributes) use ($department) {
                 return [
                     'department_id' => $department,
                 ];
@@ -44,7 +43,7 @@ class WindSeeder extends Seeder
 
         Letter::factory()
             ->count(5)
-            ->state(function (array $attributes) use($department_2) {
+            ->state(function (array $attributes) use ($department_2) {
                 return [
                     'department_id' => $department_2,
                 ];

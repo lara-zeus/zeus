@@ -36,12 +36,12 @@ return [
     /**
      * this will be setup the default seo site title. read more about it in 'laravel-seo'.
      */
-    'site_title' => config('app.name', 'Laravel') . ' | Forms',
+    'site_title' => config('app.name', 'Laravel').' | Forms',
 
     /**
      * this will be setup the default seo site description. read more about it in 'laravel-seo'.
      */
-    'site_description' => 'All about ' . config('app.name', 'Laravel') . ' Forms',
+    'site_description' => 'All about '.config('app.name', 'Laravel').' Forms',
 
     /**
      * this will be setup the default seo site color theme. read more about it in 'laravel-seo'.

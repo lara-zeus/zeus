@@ -18,62 +18,62 @@ class RainSeeder extends Seeder
                 'layout_title' => 'New page',
                 'layout_slug' => 'new-page',
                 'widgets' => json_encode([
-                    "headerColumn" => [
+                    'headerColumn' => [
                         [
-                            "type" => "paragraph",
-                            "data" => [
-                                "title" => null,
-                                "sort" => 1,
-                                "widget" => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
-                                "content" => "no title top column content",
-                            ]
-                        ]
+                            'type' => 'paragraph',
+                            'data' => [
+                                'title' => null,
+                                'sort' => 1,
+                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'content' => 'no title top column content',
+                            ],
+                        ],
                     ],
-                    "rightColumn" => [
+                    'rightColumn' => [
                         [
-                            "type" => "paragraph",
-                            "data" => [
-                                "title" => "left column",
-                                "sort" => 1,
-                                "widget" => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
-                                "content" => "left column",
-                            ]
-                        ]
+                            'type' => 'paragraph',
+                            'data' => [
+                                'title' => 'left column',
+                                'sort' => 1,
+                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'content' => 'left column',
+                            ],
+                        ],
                     ],
-                    "middleColumn" => [
+                    'middleColumn' => [
                         [
-                            "type" => "image",
-                            "data" => [
-                                "title" => null,
-                                "sort" => 1,
-                                "widget" => "LaraZeus\Rain\Widgets\Classes\ImageWidget",
-                                "url" => "layouts/d8snXpNRmcxggHsotkH9p8lxZQ2zeA-metaRGVtby5wbmc=-.png",
-                                "alt" => "alt",
-                            ]
-                        ]
+                            'type' => 'image',
+                            'data' => [
+                                'title' => null,
+                                'sort' => 1,
+                                'widget' => "LaraZeus\Rain\Widgets\Classes\ImageWidget",
+                                'url' => 'layouts/d8snXpNRmcxggHsotkH9p8lxZQ2zeA-metaRGVtby5wbmc=-.png',
+                                'alt' => 'alt',
+                            ],
+                        ],
                     ],
-                    "leftColumn" => [
+                    'leftColumn' => [
                         [
-                            "type" => "paragraph",
-                            "data" => [
-                                "title" => "right column",
-                                "sort" => 1,
-                                "widget" => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
-                                "content" => "right column",
-                            ]
-                        ]
+                            'type' => 'paragraph',
+                            'data' => [
+                                'title' => 'right column',
+                                'sort' => 1,
+                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'content' => 'right column',
+                            ],
+                        ],
                     ],
-                    "footerColumn" => [
+                    'footerColumn' => [
                         [
-                            "type" => "paragraph",
-                            "data" => [
-                                "title" => null,
-                                "sort" => 1,
-                                "widget" => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
-                                "content" => "no title bottom column content",
-                            ]
-                        ]
-                    ]
+                            'type' => 'paragraph',
+                            'data' => [
+                                'title' => null,
+                                'sort' => 1,
+                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'content' => 'no title bottom column content',
+                            ],
+                        ],
+                    ],
                 ]),
                 'created_at' => now(),
             ]);
