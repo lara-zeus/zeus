@@ -3,10 +3,10 @@
 </p>
 
 # Laravel Zeus
-provide you with a collection of Laravel packages, that helps you build your site faster and focus on your business
+provide you with a collection of Laravel packages that help you build your site faster and focus on your business
 
 ## Intro
-this project is a standalone app. a Starter Kits, it's pre-configured to run all zeus packages and some extra perks.
+this project is a standalone app., a Starter Kit; it's pre-configured to run all Zeus packages and some extra perks.
 
 - Layout and Widget manager using  [lara Zeus Rain](https://larazeus.com/rain)
 - Posts and pages using  [lara Zeus Sky](https://larazeus.com/sky)
@@ -17,29 +17,30 @@ this project is a standalone app. a Starter Kits, it's pre-configured to run all
 
 ## Installations
 you can start with
+
 ```
-composer create-project lara-zeus/zeus
+composer create-project Lara-zeus/zeus example-app
 ```
 
 ## Creating the database
-Next, you must update the values of the DB_* entries in .env, so they match your db. After that run the migration.
+Next, you must update the values of the DB_* entries in .env so they match your DB. After that, run the migration.
 
 ```
 php artisan migrate
 ```
 
-## Create the first user:
+## Create the first user
 you can create the admin user using the command:
 
 ```
 php artisan make:filament-user
 ```
 
-## Configuration:
+## Configuration
 
 ### Layout
 - create your first layout and set the slug in the 'zeus-rain' config file.
-- create your navigation and set the slug in the 'zeus' config file.
+- create your navigation and set the slug in the 'Zeus' config file.
 
 ### Build assets
 run
@@ -49,15 +50,15 @@ npm i && npm run build
 ```
 
 ## Demo Data
-optionally you can seed the database with default data.
+optionally, you can seed the database with default data.
 ```bash
 php artisan db:seed
 ```
 
-if you're using custom models you have to change the models calls `$model` in all the Factories.
+If you're using custom models, you must change the models called `$model` in all the Factories.
 
-## For more details
+### For more details
 
-* github: https://github.com/lara-zeus
-* website: https://larazeus.com
+* Github: https://github.com/lara-zeus
+* Website: https://larazeus.com
 * demo: https://demo.larazeus.com
