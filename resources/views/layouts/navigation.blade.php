@@ -15,14 +15,7 @@
                     <x-nav-link :href="url('dashboard')" :active="request()->is('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
-                     <x-nav-link :href="url('/')"
-                                 :active="
-                                 request()->is('/') ||
-                                 str(request()->url())->contains('/category/') ||
-                                 str(request()->url())->contains('/post/') ||
-                                 str(request()->url())->contains('/page/') ||
-                                 str(request()->url())->contains('/faq/')
-                                 ">
+                     <x-nav-link :href="url('/blog')" :active="str(request()->url())->contains('blog')">
                         {{ __('Blog') }}
                     </x-nav-link>
                     <x-nav-link :href="url('/library')" :active=" str(request()->url())->contains('/library')">
