@@ -18,9 +18,6 @@ export default {
         // Bolt
         '../bolt/resources/views/themes/**/*.blade.php',
         '../bolt/src/Models/FormsStatus.php',
-        // Thunder
-        '../thunder/resources/views/themes/**/*.blade.php',
-        '../thunder/src/Models/TicketsStatus.php',
         // Rain
         '../rain/resources/views/themes/**/*.blade.php',
         '../rain/src/Models/Columns.php',

@@ -7,7 +7,7 @@
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
-        "lara-zeus/bolt": "^1.0",
+        "lara-zeus/bolt": "^1.1",
         "lara-zeus/rain": "^1.0",
         "lara-zeus/sky": "^2.4",
         "lara-zeus/wind": "^2.4",
