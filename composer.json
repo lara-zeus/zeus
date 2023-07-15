@@ -6,7 +6,9 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "bezhansalleh/filament-shield": "^2.4",
         "guzzlehttp/guzzle": "^7.2",
+        "ibrahimbougaoua/filament-menu-scroll-fix": "^1.0",
         "lara-zeus/bolt": "^1.1",
         "lara-zeus/rain": "^1.0",
         "lara-zeus/sky": "^2.4",

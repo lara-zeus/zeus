@@ -17,9 +17,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('users')->insert([
-            'name' => 'ass·hole Spammer',
+            'name' => 'spammer',
             'email' => 'spammer@larazeus.com',
-            'password' => Hash::make('assholespammer'),
+            'password' => Hash::make('spammerspammerspammer'),
         ]);
 
         DB::table('users')->insert([
@@ -33,6 +33,7 @@ class DatabaseSeeder extends Seeder
             SkySeeder::class,
             BoltSeeder::class,
             RainSeeder::class,
+            ShieldSeeder::class,
         ]);
     }
 }

@@ -23,7 +23,7 @@ return [
     /**
      * allows you to create multiple departments to receive the messages from your website.
      */
-    'enableDepartments' => true,
+    'enableDepartments' => false,
 
     /**
      * you can set a default department to receive all messages, if the user didn't chose one.
