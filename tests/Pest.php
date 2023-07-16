@@ -14,7 +14,10 @@ use Tests\TestCase;
 |
 */
 
-uses(TestCase::class, RefreshDatabase::class)->in('Feature');
+uses(TestCase::class, RefreshDatabase::class)
+    ->beforeEach(fn() => $this->seed(\Database\Seeders\ShieldSeeder::class))
+    ->in('Feature');
+
 
 /*
 |--------------------------------------------------------------------------
