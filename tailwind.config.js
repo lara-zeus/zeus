@@ -9,20 +9,10 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
 
-        // Core
-        './resources/views/**/*.blade.php',
-        // Wind
-        '../wind/resources/views/themes/**/*.blade.php',
-        // Sky
-        '../sky/resources/views/themes/**/*.blade.php',
-        // Bolt
-        '../bolt/resources/views/themes/**/*.blade.php',
-        '../bolt/src/Models/FormsStatus.php',
-        // Rain
-        '../rain/resources/views/themes/**/*.blade.php',
-        '../rain/src/Models/Columns.php',
         // filament
         './vendor/filament/**/*.blade.php',
+        // Lara Zeus
+        './vendor/lara-zeus/**/*.blade.php',
         './src/CoreServiceProvider.php',
     ],
 
