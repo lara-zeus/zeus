@@ -23,6 +23,8 @@ this project is a standalone app., a Starter Kit; it's pre-configured to run all
 - Contact us form with departments using  [lara Zeus Wind](https://larazeus.com/wind)
 - Forms builder using  [lara Zeus Bolt](https://larazeus.com/bolt)
 - Login, registration, and profile using [Laravel Breeze](https://laravel.com/docs/master/starter-kits#laravel-breeze)
+- Users and permissions management using [Filament Shield](https://github.com/bezhanSalleh/filament-shield#shieldsuper-admin)
+- Dashboard Widget Counter [Overlook](https://github.com/awcodes/overlook)
 
 ## Installations
 you can start with
