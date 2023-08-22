@@ -14,7 +14,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        @livewireStyles
+        @filamentStyles
         @stack('styles')
         <style>
             * {font-family: 'KoHo', 'Almarai', sans-serif;}
@@ -45,7 +45,7 @@
         </main>
 
         @stack('scripts')
-        @livewireScripts
+        @filamentScripts
         @livewire('notifications')
 
     </body>

@@ -46,7 +46,7 @@ class User extends Authenticatable implements MustVerifyEmail, FilamentUser
         'password' => 'hashed',
     ];
 
-    public function canAccessFilament(): bool
+    public function canAccessPanel(\Filament\Panel $panel): bool
     {
         return true; //str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
     }

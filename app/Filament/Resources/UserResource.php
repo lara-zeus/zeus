@@ -5,9 +5,9 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
 use Filament\Forms\Components\TextInput;
-use Filament\Resources\Form;
+use Filament\Forms\Form;
 use Filament\Resources\Resource;
-use Filament\Resources\Table;
+use Filament\Tables\Table;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
@@ -22,7 +22,7 @@ class UserResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-lock-closed';
 
-    protected static function getNavigationLabel(): string
+    public static function getNavigationLabel(): string
     {
         return 'Users';
     }
@@ -37,7 +37,7 @@ class UserResource extends Resource
         return 'user';
     }
 
-    protected static function getNavigationGroup(): ?string
+    public static function getNavigationGroup(): ?string
     {
         return 'Users';
     }
