@@ -11,6 +11,8 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "ext-pdo_sqlite": "*",
+        "ext-json": "*",
         "awcodes/overlook": "^2.0",
         "bezhansalleh/filament-shield": "^3.0",
         "guzzlehttp/guzzle": "^7.2",
