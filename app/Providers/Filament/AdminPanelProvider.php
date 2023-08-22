@@ -38,13 +38,13 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->plugins([
                 WindPlugin::make()
-                ->windPrefix('contact-us'),
+                    ->windPrefix('contact-us'),
                 SkyPlugin::make()
                     ->skyPrefix('blog'),
                 BoltPlugin::make()
-                ->boltPrefix('forms'),
+                    ->boltPrefix('forms'),
                 RainPlugin::make()
-                ->rainPrefix('/home'),
+                    ->rainPrefix('/home'),
 
                 FilamentNavigation::make(),
                 SpatieLaravelTranslatablePlugin::make()
