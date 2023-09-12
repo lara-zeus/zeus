@@ -3,29 +3,26 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use LaraZeus\Sky\Models\Faq;
-use LaraZeus\Sky\Models\Library;
-use LaraZeus\Sky\Models\Post;
-use LaraZeus\Sky\Models\Tag;
+use LaraZeus\Sky\SkyPlugin;
 
 class SkySeeder extends Seeder
 {
     public function run()
     {
-        Tag::create(['name' => ['en' => 'laravel', 'ar' => 'لارافل'], 'type' => 'category']);
-        Tag::create(['name' => ['en' => 'talks', 'ar' => 'اخبار'], 'type' => 'category']);
-        Tag::create(['name' => ['en' => 'dev', 'ar' => 'تطوير'], 'type' => 'category']);
+        SkyPlugin::get()->getModel('Tag')::create(['name' => ['en' => 'laravel', 'ar' => 'لارافل'], 'type' => 'category']);
+        SkyPlugin::get()->getModel('Tag')::create(['name' => ['en' => 'talks', 'ar' => 'اخبار'], 'type' => 'category']);
+        SkyPlugin::get()->getModel('Tag')::create(['name' => ['en' => 'dev', 'ar' => 'تطوير'], 'type' => 'category']);
 
-        Post::factory()
+        SkyPlugin::get()->getModel('Post')::factory()
             ->count(15)
             ->create();
 
-        foreach (Post::all() as $post) { // loop through all posts
-            $random_tags = Tag::all()->random(1)->first()->name;
+        foreach (SkyPlugin::get()->getModel('Post')::all() as $post) { // loop through all posts
+            $random_tags = SkyPlugin::get()->getModel('Tag')::all()->random(1)->first()->name;
             $post->syncTagsWithType([$random_tags], 'category');
         }
 
-        Faq::create([
+        SkyPlugin::get()->getModel('Faq')::create([
             'question' => [
                 'en' => 'who is zeus',
                 'ar' => 'من هو زوس',
@@ -36,15 +33,15 @@ class SkySeeder extends Seeder
             ],
         ]);
 
-        config('zeus-sky.models.tag')::create(['name' => ['en' => 'support docs', 'ar' => 'الدعم الفني'], 'type' => 'library']);
-        config('zeus-sky.models.tag')::create(['name' => ['en' => 'how to', 'ar' => 'كيف'], 'type' => 'library']);
+        SkyPlugin::get()->getModel('Tag')::create(['name' => ['en' => 'support docs', 'ar' => 'الدعم الفني'], 'type' => 'library']);
+        SkyPlugin::get()->getModel('Tag')::create(['name' => ['en' => 'how to', 'ar' => 'كيف'], 'type' => 'library']);
 
-        Library::factory()
+        SkyPlugin::get()->getModel('Library')::factory()
             ->count(8)
             ->create();
 
-        foreach (Library::all() as $library) { // loop through all library
-            $random_tags = Tag::getWithType('library')->random(1)->first()->name;
+        foreach (SkyPlugin::get()->getModel('Library')::all() as $library) { // loop through all library
+            $random_tags = SkyPlugin::get()->getModel('Tag')::getWithType('library')->random(1)->first()->name;
             $library->syncTagsWithType([$random_tags], 'library');
         }
     }

@@ -1,4 +1,4 @@
-[![Zeus Kit](https://larazeus.com/images/zeus-kit.png)](https://github.com/lara-zeus/zeus)
+[![Zeus Kit](https://larazeus.com/images/zeus-banner.png)](https://github.com/lara-zeus/zeus)
 
 <p align="center">
 
@@ -11,11 +11,11 @@
 
 </p>
 
-# Laravel Zeus
-provide you with a collection of Laravel packages that help you build your site faster and focus on your business
+# lara Zeus
+provide you with a collection of Laravel packages and filament plugins that help you build your site faster and focus on your business
 
 ## Intro
-this project is a standalone app., a Starter Kit; it's pre-configured to run all Zeus packages and some extra perks.
+This project is a standalone app, a Starter Kit; it's pre-configured to run all Zeus packages and some extra perks.
 
 - Layout and Widget manager using  [lara Zeus Rain](https://larazeus.com/rain)
 - Posts and pages using  [lara Zeus Sky](https://larazeus.com/sky)

@@ -1,0 +1,4 @@
+/*!
+  * PhotoSwipe 5.3.9 - https://photoswipe.com
+  * (c) 2023 Dmytro Semenov
+  */
