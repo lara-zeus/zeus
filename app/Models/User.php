@@ -11,9 +11,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable implements MustVerifyEmail, FilamentUser
+class User extends Authenticatable implements FilamentUser, MustVerifyEmail
 {
-    use HasApiTokens, HasFactory, Notifiable, CanResetPassword, HasFilamentShield;
+    use CanResetPassword, HasApiTokens, HasFactory, HasFilamentShield, Notifiable;
 
     /**
      * The attributes that are mass assignable.
