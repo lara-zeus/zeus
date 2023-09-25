@@ -2,7 +2,6 @@
 
 namespace App\Providers\Filament;
 
-use Filament\Forms\Components\Select;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -35,7 +34,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->colors([
-                'primary' => Color::Blue,
+                'primary' => Color::Emerald,
             ])
             ->viteTheme('resources/css/filament/admin/theme.css')
             ->plugins([
@@ -46,11 +45,13 @@ class AdminPanelProvider extends PanelProvider
                 BoltPlugin::make()
                     ->boltPrefix('forms'),
                 RainPlugin::make()
+                    ->defaultLayout('home-page')
                     ->rainPrefix('/home'),
 
                 FilamentNavigation::make(),
                 SpatieLaravelTranslatablePlugin::make()
-                    ->defaultLocales(['en', 'es']),
+                    ->defaultLocales([config('app.locale')]),
+                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make()
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')

@@ -3,10 +3,10 @@
 namespace App\Policies;
 
 use App\Models\User;
-use LaraZeus\Bolt\Models\Category;
+
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class CategoryPolicy
+class UserPolicy
 {
     use HandlesAuthorization;
 
@@ -18,19 +18,18 @@ class CategoryPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->can('view_any_category');
+        return $user->can('view_any_user');
     }
 
     /**
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \LaraZeus\Bolt\Models\Category  $category
      * @return bool
      */
-    public function view(User $user, Category $category): bool
+    public function view(User $user): bool
     {
-        return $user->can('view_category');
+        return $user->can('view_user');
     }
 
     /**
@@ -41,31 +40,29 @@ class CategoryPolicy
      */
     public function create(User $user): bool
     {
-        return $user->can('create_category');
+        return $user->can('create_user');
     }
 
     /**
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \LaraZeus\Bolt\Models\Category  $category
      * @return bool
      */
-    public function update(User $user, Category $category): bool
+    public function update(User $user): bool
     {
-        return $user->can('update_category');
+        return $user->can('update_user');
     }
 
     /**
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \LaraZeus\Bolt\Models\Category  $category
      * @return bool
      */
-    public function delete(User $user, Category $category): bool
+    public function delete(User $user): bool
     {
-        return $user->can('delete_category');
+        return $user->can('delete_user');
     }
 
     /**
@@ -76,19 +73,18 @@ class CategoryPolicy
      */
     public function deleteAny(User $user): bool
     {
-        return $user->can('delete_any_category');
+        return $user->can('delete_any_user');
     }
 
     /**
      * Determine whether the user can permanently delete.
      *
      * @param  \App\Models\User  $user
-     * @param  \LaraZeus\Bolt\Models\Category  $category
      * @return bool
      */
-    public function forceDelete(User $user, Category $category): bool
+    public function forceDelete(User $user): bool
     {
-        return $user->can('force_delete_category');
+        return $user->can('force_delete_user');
     }
 
     /**
@@ -99,19 +95,18 @@ class CategoryPolicy
      */
     public function forceDeleteAny(User $user): bool
     {
-        return $user->can('force_delete_any_category');
+        return $user->can('force_delete_any_user');
     }
 
     /**
      * Determine whether the user can restore.
      *
      * @param  \App\Models\User  $user
-     * @param  \LaraZeus\Bolt\Models\Category  $category
      * @return bool
      */
-    public function restore(User $user, Category $category): bool
+    public function restore(User $user): bool
     {
-        return $user->can('restore_category');
+        return $user->can('restore_user');
     }
 
     /**
@@ -122,19 +117,18 @@ class CategoryPolicy
      */
     public function restoreAny(User $user): bool
     {
-        return $user->can('restore_any_category');
+        return $user->can('restore_any_user');
     }
 
     /**
-     * Determine whether the user can replicate.
+     * Determine whether the user can bulk restore.
      *
      * @param  \App\Models\User  $user
-     * @param  \LaraZeus\Bolt\Models\Category  $category
      * @return bool
      */
-    public function replicate(User $user, Category $category): bool
+    public function replicate(User $user): bool
     {
-        return $user->can('replicate_category');
+        return $user->can('replicate_user');
     }
 
     /**
@@ -145,7 +139,6 @@ class CategoryPolicy
      */
     public function reorder(User $user): bool
     {
-        return $user->can('reorder_category');
+        return $user->can('reorder_user');
     }
-
 }

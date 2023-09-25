@@ -9,7 +9,6 @@ return [
         'navigation_group' => true,
         'is_globally_searchable' => false,
         'show_model_path' => true,
-        //filament-shield.nav.role.label
     ],
 
     'auth_provider_model' => [
@@ -23,9 +22,9 @@ return [
         'intercept_gate' => 'before', // after
     ],
 
-    'filament_user' => [
+    'panel_user' => [
         'enabled' => true,
-        'name' => 'filament_user',
+        'name' => 'panel_user',
     ],
 
     'permission_prefixes' => [
@@ -71,6 +70,12 @@ return [
         ],
 
         'resources' => [],
+    ],
+
+    'discovery' => [
+        'discover_all_resources' => true,
+        'discover_all_widgets' => true,
+        'discover_all_pages' => true,
     ],
 
     'register_role_policy' => [

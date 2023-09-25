@@ -11,7 +11,7 @@
 
 </p>
 
-# lara Zeus
+# Lara Zeus
 provide you with a collection of Laravel packages and filament plugins that help you build your site faster and focus on your business
 
 ## Intro
@@ -24,7 +24,6 @@ This project is a standalone app, a Starter Kit; it's pre-configured to run all 
 - Forms builder using  [lara Zeus Bolt](https://larazeus.com/bolt)
 - Login, registration, and profile using [Laravel Breeze](https://laravel.com/docs/master/starter-kits#laravel-breeze)
 - Users and permissions management using [Filament Shield](https://github.com/bezhanSalleh/filament-shield#shieldsuper-admin)
-- Dashboard Widget Counter [Overlook](https://github.com/awcodes/overlook)
 
 ## Installations
 you can start with
@@ -50,8 +49,14 @@ php artisan make:filament-user
 ## Configuration
 
 ### Layout
-- create your first layout and set the slug in the 'zeus-rain' config file.
-- create your navigation and set the slug in the 'Zeus' config file.
+- create your first layout and set the slug in the 'AdminPanelProvider' file:
+    ```php
+    RainPlugin::make()
+        ->defaultLayout('home-page')
+    ```
+ the default is: `home-page`.
+
+- create your navigation and set the slug in the 'zeus.php' config file. the default is: `home-nav`
 
 ### Build assets
 run
