@@ -8,7 +8,7 @@ return [
      *
      * breeze, daisy, another-portfolio
      */
-    'theme' => 'daisy',
+    'theme' => 'another-portfolio',
 
     /**
      * set the default layout component
