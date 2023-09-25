@@ -73,12 +73,6 @@ php artisan db:seed
 
 If you're using custom models, you must change the models called `$model` in all the Factories.
 
-## Quick start
-
-[![starter-kit](https://larazeus.com/images/starter-kit-mini.png?v=2)](https://github.com/lara-zeus/zeus)
-[![artemis](https://larazeus.com/images/artemis-mini.png?v=2)](https://github.com/lara-zeus/artemis)
-
-
 ### For more details
 
 * Github: https://github.com/lara-zeus
