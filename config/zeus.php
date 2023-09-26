@@ -19,7 +19,7 @@ return [
      * zeus::themes.daisy.layouts.app
      * zeus::themes.another-portfolio.layouts.app
      */
-    'layout' => 'zeus::themes.daisy.layouts.app',
+    'layout' => 'zeus::themes.another-portfolio.layouts.app',
 
     /**
      * this will be set up the default seo site title. read more about it in 'laravel-seo'.

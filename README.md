@@ -52,7 +52,7 @@ php artisan make:filament-user
 - create your first layout and set the slug in the 'AdminPanelProvider' file:
     ```php
     RainPlugin::make()
-        ->defaultLayout('home-page')
+        ->defaultLayout('new-page')
     ```
  the default is: `home-page`.
 

@@ -45,7 +45,7 @@ class AdminPanelProvider extends PanelProvider
                 BoltPlugin::make()
                     ->boltPrefix('forms'),
                 RainPlugin::make()
-                    ->defaultLayout('home-page')
+                    ->defaultLayout('new-page')
                     ->rainPrefix('/home'),
 
                 FilamentNavigation::make(),
