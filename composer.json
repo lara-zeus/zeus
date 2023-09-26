@@ -2,27 +2,34 @@
     "name": "lara-zeus/zeus",
     "type": "project",
     "description": "a standalone app., a Starter Kit; it's pre-configured to run all Zeus packages and some extra perks..",
-    "keywords": ["laravel", "framework", "larazeus", "filament"],
+    "keywords": [
+        "laravel",
+        "framework",
+        "larazeus",
+        "filament"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "awcodes/overlook": "^1.3",
-        "bezhansalleh/filament-shield": "^2.4",
+        "ext-json": "*",
+        "ext-pdo_sqlite": "*",
+        "bezhansalleh/filament-shield": "^3.0",
         "guzzlehttp/guzzle": "^7.2",
-        "ibrahimbougaoua/filament-menu-scroll-fix": "^1.0",
-        "lara-zeus/bolt": "^1.1",
-        "lara-zeus/rain": "^1.0",
-        "lara-zeus/sky": "^2.4",
-        "lara-zeus/wind": "^2.4",
+        "lara-zeus/artemis": "^1.0",
+        "lara-zeus/bolt": "^2.0",
+        "lara-zeus/rain": "^2.1",
+        "lara-zeus/sky": "^3.1",
+        "lara-zeus/wind": "^3.1",
         "laravel/framework": "^10.10",
-        "laravel/sanctum": "^3.2",
-        "laravel/tinker": "^2.8"
+        "laravel/sanctum": "^3.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
+        "filament/upgrade": "^3.0-stable",
         "laravel/breeze": "^1.21",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
+        "laravel/tinker": "^2.8",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
         "nunomaduro/larastan": "^2.0",
@@ -46,9 +53,8 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
-            "@php artisan vendor:publish --force --tag=livewire:assets --ansi"
-        ],
-        "post-update-cmd": [
+            "@php artisan filament:upgrade",
+            "@php artisan vendor:publish --force --tag=livewire:assets --ansi",
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
             "@php artisan vendor:publish --tag=zeus-assets --ansi --force"
         ],
@@ -74,11 +80,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "github",
-            "url": "https://github.com/atmonshi/filament-navigation"
-        }
-    ]
+    "prefer-stable": true
 }
