@@ -40,10 +40,8 @@ class AdminPanelProvider extends PanelProvider
             ->plugins([
                 WindPlugin::make()
                     ->windPrefix('contact-us'),
-                SkyPlugin::make()
-                    ->skyPrefix('blog'),
-                BoltPlugin::make()
-                    ->boltPrefix('forms'),
+                SkyPlugin::make(),
+                BoltPlugin::make(),
                 RainPlugin::make()
                     ->defaultLayout('new-page')
                     ->rainPrefix('/home'),

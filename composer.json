@@ -16,9 +16,9 @@
         "bezhansalleh/filament-shield": "^3.0",
         "guzzlehttp/guzzle": "^7.2",
         "lara-zeus/artemis": "^1.0",
-        "lara-zeus/bolt": "^2.0",
+        "lara-zeus/bolt": "^2.1",
         "lara-zeus/rain": "^2.1",
-        "lara-zeus/sky": "^3.1",
+        "lara-zeus/sky": "^3.2",
         "lara-zeus/wind": "^3.1",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2"
@@ -80,5 +80,11 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "github",
+            "url": "https://github.com/lara-zeus/filament-export"
+        }
+    ]
 }
