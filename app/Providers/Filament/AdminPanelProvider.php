@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -19,10 +20,9 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use LaraZeus\Bolt\BoltPlugin;
-use LaraZeus\Rain\RainPlugin;
+use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Wind\WindPlugin;
-use RyanChandler\FilamentNavigation\FilamentNavigation;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -40,16 +40,18 @@ class AdminPanelProvider extends PanelProvider
             ->plugins([
                 WindPlugin::make()
                     ->windPrefix('contact-us'),
-                SkyPlugin::make(),
-                BoltPlugin::make(),
-                RainPlugin::make()
-                    ->defaultLayout('new-page')
-                    ->rainPrefix('/home'),
 
-                FilamentNavigation::make(),
+                SkyPlugin::make(),
+
+                BoltPlugin::make(),
+
+                DynamicDashboardPlugin::make()
+                    ->defaultLayout('new-page'),
+
                 SpatieLaravelTranslatablePlugin::make()
                     ->defaultLocales([config('app.locale')]),
-                \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+
+                FilamentShieldPlugin::make(),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')

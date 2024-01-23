@@ -5,7 +5,7 @@ namespace App\Providers;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\Select;
 use Illuminate\Support\ServiceProvider;
-use RyanChandler\FilamentNavigation\FilamentNavigation;
+use LaraZeus\Sky\SkyPlugin;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Filament::serving(function () {
-            FilamentNavigation::get()
+            SkyPlugin::get()
                 ->itemType(
                     __('App link'),
                     [
