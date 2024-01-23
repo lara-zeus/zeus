@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'domain' => null,
+
     /**
      * set the default path for the blog homepage.
      */
@@ -33,6 +35,7 @@ return [
         'PostStatus' => \LaraZeus\Sky\Models\PostStatus::class,
         'Tag' => \LaraZeus\Sky\Models\Tag::class,
         'Library' => \LaraZeus\Sky\Models\Library::class,
+        'Navigation' => \LaraZeus\Sky\Models\Navigation::class,
     ],
 
     'parsers' => [
@@ -54,5 +57,5 @@ return [
      * \LaraZeus\Sky\Editors\MarkdownEditor::class,
      * \LaraZeus\Sky\Editors\RichEditor::class,
      */
-    'editor' => \LaraZeus\Sky\Editors\RichEditor::class,
+    'editor' => \LaraZeus\Sky\Editors\TipTapEditor::class,
 ];

@@ -4,25 +4,33 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
 
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?int $navigationSort = 9;
+    protected static ?int $navigationSort = 1;
 
     protected static ?string $navigationIcon = 'heroicon-o-lock-closed';
 
-    public static function getNavigationLabel(): string
+    public static function getNavigationBadge(): ?string
+    {
+        return static::getModel()::count();
+    }
+
+    /*public static function getNavigationLabel(): string
     {
         return 'Users';
     }
@@ -35,7 +43,7 @@ class UserResource extends Resource
     public static function getLabel(): string
     {
         return 'user';
-    }
+    }*/
 
     public static function getNavigationGroup(): ?string
     {
@@ -45,11 +53,19 @@ class UserResource extends Resource
     public static function form(Form $form): Form
     {
         return $form->schema([
-            TextInput::make('name')->required(),
-            TextInput::make('email')->email()->required(),
-            TextInput::make('password')
-                ->password()
-                ->maxLength(255),
+            Section::make()
+                ->hiddenLabel()
+                ->columns()
+                ->schema([
+                    TextInput::make('name')->required(),
+                    TextInput::make('email')->email()->required(),
+                    TextInput::make('password')
+                        ->dehydrateStateUsing(fn ($state) => Hash::make($state))
+                        ->password()
+                        ->revealable()
+                        ->revealable()
+                        ->maxLength(255),
+                ]),
         ]);
     }
 
@@ -57,23 +73,27 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('id')
-                    ->sortable(),
+                ImageColumn::make('avatar_url')
+                    ->toggleable()
+                    ->circular(),
                 TextColumn::make('name')
                     ->sortable()
-                    ->searchable(),
-                TextColumn::make('email')
-                    ->sortable()
+                    ->toggleable()
+                    ->description(fn (User $record) => $record->email)
                     ->searchable(),
                 IconColumn::make('email_verified_at')
                     ->boolean()
+                    ->default(0)
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('created_at')
                     ->dateTime('M j, Y')
+                    ->toggleable(isToggledHiddenByDefault: true)
+                    ->toggleable()
                     ->sortable(),
                 TextColumn::make('updated_at')
                     ->dateTime('M j, Y')
+                    ->toggleable(isToggledHiddenByDefault: true)
                     ->sortable(),
             ])
             ->filters([
