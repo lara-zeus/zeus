@@ -57,15 +57,15 @@ class UserResource extends Resource
                 ->hiddenLabel()
                 ->columns()
                 ->schema([
-                TextInput::make('name')->required(),
-                TextInput::make('email')->email()->required(),
-                TextInput::make('password')
-                    ->dehydrateStateUsing(fn($state) => Hash::make($state))
-                    ->password()
-                    ->revealable()
-                    ->revealable()
-                    ->maxLength(255),
-            ])
+                    TextInput::make('name')->required(),
+                    TextInput::make('email')->email()->required(),
+                    TextInput::make('password')
+                        ->dehydrateStateUsing(fn ($state) => Hash::make($state))
+                        ->password()
+                        ->revealable()
+                        ->revealable()
+                        ->maxLength(255),
+                ]),
         ]);
     }
 
@@ -79,7 +79,7 @@ class UserResource extends Resource
                 TextColumn::make('name')
                     ->sortable()
                     ->toggleable()
-                    ->description(fn(User $record) => $record->email)
+                    ->description(fn (User $record) => $record->email)
                     ->searchable(),
                 IconColumn::make('email_verified_at')
                     ->boolean()
@@ -98,9 +98,9 @@ class UserResource extends Resource
             ])
             ->filters([
                 Filter::make('verified')
-                    ->query(fn(Builder $query): Builder => $query->whereNotNull('email_verified_at')),
+                    ->query(fn (Builder $query): Builder => $query->whereNotNull('email_verified_at')),
                 Filter::make('unverified')
-                    ->query(fn(Builder $query): Builder => $query->whereNull('email_verified_at')),
+                    ->query(fn (Builder $query): Builder => $query->whereNull('email_verified_at')),
             ]);
     }
 
