@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "249faffda859295c9a4fd385b9bd1c92",
+    "content-hash": "d37b247be44567afd0879cffbff353d0",
     "packages": [
         {
             "name": "alperenersoy/filament-export",
@@ -3332,6 +3332,87 @@
                 }
             ],
             "time": "2024-01-20T16:29:31+00:00"
+        },
+        {
+            "name": "lara-zeus/boredom",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lara-zeus/boredom.git",
+                "reference": "9b325679586ce6cda5f76547cb7e01c5fae65d45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lara-zeus/boredom/zipball/9b325679586ce6cda5f76547cb7e01c5fae65d45",
+                "reference": "9b325679586ce6cda5f76547cb7e01c5fae65d45",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "nunomaduro/phpinsights": "^2.8",
+                "orchestra/testbench": "^8.0",
+                "phpstan/extension-installer": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaraZeus\\Boredom\\BoredomServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaraZeus\\Boredom\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php coder",
+                    "email": "info@larazeus.com",
+                    "role": "Owner"
+                }
+            ],
+            "description": "Zeus Boredom, use Boring Avatars as the default avatar provider in your FilamentPHP v3 application",
+            "homepage": "https://larazeus.com/boredom",
+            "keywords": [
+                "avatar",
+                "boring",
+                "design",
+                "filamentphp",
+                "generator",
+                "lara-zeus",
+                "laravel",
+                "panel",
+                "provider",
+                "ui"
+            ],
+            "support": {
+                "issues": "https://github.com/lara-zeus/boredom/issues",
+                "source": "https://github.com/lara-zeus/boredom"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/larazeus",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/atmonshi",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-01-21T20:03:05+00:00"
         },
         {
             "name": "lara-zeus/core",
