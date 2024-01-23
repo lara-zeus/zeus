@@ -14,7 +14,7 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements FilamentUser, MustVerifyEmail
 {
-    use CanResetPassword, HasApiTokens, HasFactory, HasRoles, Notifiable, HasBoringAvatar;
+    use CanResetPassword, HasApiTokens, HasBoringAvatar, HasFactory, HasRoles, Notifiable;
 
     protected $guarded = [];
 

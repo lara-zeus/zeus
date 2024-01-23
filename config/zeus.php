@@ -24,7 +24,6 @@ return [
     'theme' => 'zeus',
     'layout' => 'zeus::components.app',
 
-
     /**
      * this will be set up the default seo site title. read more about it in 'laravel-seo'.
      */
@@ -33,7 +32,7 @@ return [
     /**
      * this will be setup the default seo site description. read more about it in 'laravel-seo'.
      */
-    'site_description' => 'All about ' . config('app.name', 'Laravel'),
+    'site_description' => 'All about '.config('app.name', 'Laravel'),
 
     /**
      * this will be setup the default seo site color theme. read more about it in 'laravel-seo'.
