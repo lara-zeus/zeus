@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        if (!Schema::hasTable('navigations')) {
+        if (! Schema::hasTable('navigations')) {
             Schema::create('navigations', function (Blueprint $table) {
                 $table->id();
                 $table->string('name');
