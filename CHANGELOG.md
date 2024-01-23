@@ -1,5 +1,18 @@
 # All Changelog
 
+## v2.1.0 - 2024-01-23
+
+### What's Changed
+
+* Bump vite from 4.3.9 to 4.5.2 by @dependabot in https://github.com/lara-zeus/zeus/pull/10
+* upgrade to last versions by @atmonshi in https://github.com/lara-zeus/zeus/pull/11
+
+### New Contributors
+
+* @dependabot made their first contribution in https://github.com/lara-zeus/zeus/pull/10
+
+**Full Changelog**: https://github.com/lara-zeus/zeus/compare/v2.0.1...v2.1.0
+
 ## v2.0.1 - 2023-10-15
 
 ### What's Changed
