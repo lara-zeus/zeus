@@ -25,6 +25,7 @@ use LaraZeus\Boredom\Enums\Variants;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Wind\WindPlugin;
+use Swis\Filament\Backgrounds\FilamentBackgroundsPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -36,6 +37,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->homeUrl('/')
             ->login()
+            ->profile()
             ->colors([
                 'primary' => Color::Emerald,
             ])
@@ -105,6 +107,7 @@ class AdminPanelProvider extends PanelProvider
                 ->defaultLocales([config('app.locale')]),
 
             FilamentShieldPlugin::make(),
+            FilamentBackgroundsPlugin::make(),
         ];
     }
 }
