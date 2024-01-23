@@ -11,6 +11,11 @@ return [
      */
     'prefix' => 'forms',
 
+    /*
+     * set database table prefix
+     */
+    'table-prefix' => '',
+
     /**
      * the middleware you want to apply on all the blog routes
      * for example if you want to make your blog for users only, add the middleware 'auth'.
@@ -38,4 +43,8 @@ return [
     'uploadDisk' => 'public',
 
     'uploadDirectory' => 'forms',
+
+    'show_presets' => false,
+
+    'allow_design' => false,
 ];
