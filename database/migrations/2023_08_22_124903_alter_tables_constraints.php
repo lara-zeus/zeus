@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        if (!app()->runningUnitTests()) {
+        if (! app()->runningUnitTests()) {
             Schema::table('forms', function (Blueprint $table) {
                 Schema::disableForeignKeyConstraints();
                 $table->dropForeign(['user_id']);
