@@ -63,11 +63,11 @@ class RenderNavItem
     private static function getAppUrl($app)
     {
         return match ($app) {
-            'blog' => 'blog',
             'contact' => 'contact-us',
             'faq' => 'blog/faq',
             'libraries' => 'blog/library',
             'forms' => 'forms',
+            default => 'blog',
         };
     }
 }
