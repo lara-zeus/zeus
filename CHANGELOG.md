@@ -1,5 +1,13 @@
 # All Changelog
 
+## v2.1.1 - 2024-06-13
+
+### What's Changed
+
+* remove filament-export package by @atmonshi in https://github.com/lara-zeus/zeus/pull/14
+
+**Full Changelog**: https://github.com/lara-zeus/zeus/compare/v2.1.0...v2.1.1
+
 ## v2.1.0 - 2024-01-23
 
 ### What's Changed
