@@ -4,7 +4,7 @@ namespace App\Policies;
 
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
-use LaraZeus\Rain\Models\Layout;
+use LaraZeus\DynamicDashboard\Models\Layout;
 
 class LayoutPolicy
 {

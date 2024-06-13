@@ -13,26 +13,28 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('forms', function (Blueprint $table) {
-            Schema::disableForeignKeyConstraints();
-            $table->dropForeign(['user_id']);
-            $table->dropForeign(['category_id']);
+        if (! app()->runningUnitTests()) {
+            Schema::table('forms', function (Blueprint $table) {
+                Schema::disableForeignKeyConstraints();
+                $table->dropForeign(['user_id']);
+                $table->dropForeign(['category_id']);
 
-            $table->unsignedBigInteger('user_id')->nullable()->change();
-            Schema::enableForeignKeyConstraints();
+                $table->unsignedBigInteger('user_id')->nullable()->change();
+                Schema::enableForeignKeyConstraints();
 
-            $table->foreign('user_id')
-                ->onUpdate('cascade')
-                ->nullOnDelete()
-                ->references('id')
-                ->on('users');
+                $table->foreign('user_id')
+                    ->onUpdate('cascade')
+                    ->nullOnDelete()
+                    ->references('id')
+                    ->on('users');
 
-            $table->foreign('category_id')
-                ->onUpdate('cascade')
-                ->nullOnDelete()
-                ->references('id')
-                ->on('categories');
-        });
+                $table->foreign('category_id')
+                    ->onUpdate('cascade')
+                    ->nullOnDelete()
+                    ->references('id')
+                    ->on('categories');
+            });
+        }
     }
 
     /**
