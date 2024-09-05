@@ -1,4 +1,4 @@
-[![Zeus Kit](https://larazeus.com/images/lara-zeus-zeus.webp)](https://github.com/lara-zeus/zeus)
+[![Zeus Kit](https://larazeus.com/images/lara-zeus-zeus.webp?v=2)](https://github.com/lara-zeus/zeus)
 
 <p align="center">
 
