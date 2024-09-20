@@ -20,7 +20,6 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use LaraZeus\Bolt\BoltPlugin;
-use LaraZeus\Boredom\BoringAvatarPlugin;
 use LaraZeus\DynamicDashboard\DynamicDashboardPlugin;
 use LaraZeus\Sky\SkyPlugin;
 use LaraZeus\Wind\WindPlugin;
@@ -40,9 +39,6 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Emerald,
             ])
-            ->defaultAvatarProvider(
-                \LaraZeus\Boredom\BoringAvatarsProvider::class
-            )
             ->viteTheme('resources/css/filament/admin/theme.css')
             // Nav
             ->navigationGroups([
@@ -88,9 +84,6 @@ class AdminPanelProvider extends PanelProvider
             WindPlugin::make()
                 ->windPrefix('contact-us')
                 ->navigationGroupLabel('CMS'),
-
-            BoringAvatarPlugin::make()
-                ->colors(['0A0310', '49007E', 'FF005B', 'FF7D10', 'FFB238']),
 
             SkyPlugin::make()
                 ->navigationGroupLabel('CMS'),
