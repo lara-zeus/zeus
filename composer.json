@@ -21,7 +21,7 @@
         "lara-zeus/sky": "^3.4",
         "lara-zeus/wind": "^3.2",
         "laravel/framework": "^11.9",
-        "laravel/sanctum": "^3.2",
+        "laravel/sanctum": "^4.0",
         "swisnl/filament-backgrounds": "^1.1",
         "laravel/tinker": "^2.9"
     },
@@ -34,9 +34,8 @@
         "phpunit/phpunit": "^11.0.1",
         "laravel/breeze": "^2.2",
         "larastan/larastan": "^2.0",
-        "pestphp/pest": "^2.8",
-        "pestphp/pest-plugin-laravel": "^2.0",
-        "spatie/laravel-ignition": "^2.0"
+        "pestphp/pest": "^3.1",
+        "pestphp/pest-plugin-laravel": "^3.0"
     },
     "autoload": {
         "psr-4": {
