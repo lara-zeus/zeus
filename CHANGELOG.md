@@ -1,5 +1,13 @@
 # All Changelog
 
+## v3.0.0 - 2024-09-20
+
+### What's Changed
+
+V3 now works with laravel 11 by default.
+
+**Full Changelog**: https://github.com/lara-zeus/zeus/compare/v2.1.1...v3.0.0
+
 ## v2.1.1 - 2024-06-13
 
 ### What's Changed
