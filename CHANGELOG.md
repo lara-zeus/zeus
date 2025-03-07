@@ -1,5 +1,15 @@
 # All Changelog
 
+## v3.1.0 - 2025-03-07
+
+### What's Changed
+
+* Bump rollup from 3.29.4 to 3.29.5 by @dependabot in https://github.com/lara-zeus/zeus/pull/17
+* Upgrade Checker by @atmonshi in https://github.com/lara-zeus/zeus/pull/19
+* upgrade to laravel 12 by @atmonshi in https://github.com/lara-zeus/zeus/pull/20
+
+**Full Changelog**: https://github.com/lara-zeus/zeus/compare/v3.0.0...v3.1.0
+
 ## v3.0.0 - 2024-09-20
 
 ### What's Changed
