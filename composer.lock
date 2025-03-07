@@ -493,78 +493,6 @@
             "time": "2024-02-09T16:56:22+00:00"
         },
         {
-            "name": "codeat3/blade-clarity-icons",
-            "version": "1.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/codeat3/blade-clarity-icons.git",
-                "reference": "4b4450200061633f4e9f5390e7095fbc30057340"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/codeat3/blade-clarity-icons/zipball/4b4450200061633f4e9f5390e7095fbc30057340",
-                "reference": "4b4450200061633f4e9f5390e7095fbc30057340",
-                "shasum": ""
-            },
-            "require": {
-                "blade-ui-kit/blade-icons": "^1.1",
-                "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
-                "php": "^7.4|^8.0"
-            },
-            "require-dev": {
-                "codeat3/blade-icon-generation-helpers": "^0.10",
-                "codeat3/phpcs-styles": "^1.0",
-                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0",
-                "phpunit/phpunit": "^9.0|^10.5|^11.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Codeat3\\BladeClarityIcons\\BladeClarityIconsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Codeat3\\BladeClarityIcons\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Swapnil Sarwe",
-                    "homepage": "https://swapnilsarwe.com"
-                },
-                {
-                    "name": "Dries Vints",
-                    "homepage": "https://driesvints.com"
-                }
-            ],
-            "description": "A package to easily make use of Clarity Icons in your Laravel Blade views.",
-            "homepage": "https://github.com/codeat3/blade-clarity-icons",
-            "keywords": [
-                "blade",
-                "clarity",
-                "icons",
-                "laravel"
-            ],
-            "support": {
-                "issues": "https://github.com/codeat3/blade-clarity-icons/issues",
-                "source": "https://github.com/codeat3/blade-clarity-icons/tree/1.10.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/swapnilsarwe",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-02-25T08:35:37+00:00"
-        },
-        {
             "name": "codeat3/blade-iconpark",
             "version": "1.7.0",
             "source": {
@@ -898,16 +826,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "4.2.2",
+            "version": "4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "19a2b7deb5fe8c2df0ff817ecea305e50acb62ec"
+                "reference": "33d2d7fe1269b2301640c44cf2896ea607b30e3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/19a2b7deb5fe8c2df0ff817ecea305e50acb62ec",
-                "reference": "19a2b7deb5fe8c2df0ff817ecea305e50acb62ec",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/33d2d7fe1269b2301640c44cf2896ea607b30e3e",
+                "reference": "33d2d7fe1269b2301640c44cf2896ea607b30e3e",
                 "shasum": ""
             },
             "require": {
@@ -984,7 +912,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/4.2.2"
+                "source": "https://github.com/doctrine/dbal/tree/4.2.3"
             },
             "funding": [
                 {
@@ -1000,7 +928,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-16T08:40:56+00:00"
+            "time": "2025-03-07T18:29:05+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -2883,20 +2811,19 @@
         },
         {
             "name": "lara-zeus/bolt",
-            "version": "v3.0.76",
+            "version": "v3.0.77",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/bolt.git",
-                "reference": "f9b94c30cb292f391b7bbf0c6eb930ab7713e0c1"
+                "reference": "16a9114310ec73c70c6b2672fce1287dcf230fd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/f9b94c30cb292f391b7bbf0c6eb930ab7713e0c1",
-                "reference": "f9b94c30cb292f391b7bbf0c6eb930ab7713e0c1",
+                "url": "https://api.github.com/repos/lara-zeus/bolt/zipball/16a9114310ec73c70c6b2672fce1287dcf230fd4",
+                "reference": "16a9114310ec73c70c6b2672fce1287dcf230fd4",
                 "shasum": ""
             },
             "require": {
-                "codeat3/blade-clarity-icons": "^1.7",
                 "flowframe/laravel-trend": "^0.4",
                 "guava/filament-icon-picker": "^2.3",
                 "lara-zeus/accordion": "^1.1",
@@ -2973,7 +2900,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-05T21:49:23+00:00"
+            "time": "2025-03-07T03:51:08+00:00"
         },
         {
             "name": "lara-zeus/core",
@@ -3379,20 +3306,19 @@
         },
         {
             "name": "lara-zeus/sky",
-            "version": "v3.4.18",
+            "version": "v3.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lara-zeus/sky.git",
-                "reference": "c5973e9c42de6de875f09b41953c53e87e1319e4"
+                "reference": "be3a25edebf27b7496e356066adf1550a5b16c31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/c5973e9c42de6de875f09b41953c53e87e1319e4",
-                "reference": "c5973e9c42de6de875f09b41953c53e87e1319e4",
+                "url": "https://api.github.com/repos/lara-zeus/sky/zipball/be3a25edebf27b7496e356066adf1550a5b16c31",
+                "reference": "be3a25edebf27b7496e356066adf1550a5b16c31",
                 "shasum": ""
             },
             "require": {
-                "doctrine/dbal": "^3.5|^4.0",
                 "filament/spatie-laravel-media-library-plugin": "^3.0",
                 "filament/spatie-laravel-tags-plugin": "^3.0",
                 "lara-zeus/core": "^3.2",
@@ -3465,7 +3391,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-03T20:07:59+00:00"
+            "time": "2025-03-07T19:18:10+00:00"
         },
         {
             "name": "lara-zeus/wind",
@@ -10922,16 +10848,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.11",
+            "version": "11.5.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3946ac38410be7440186c6e74584f31b15107fc7"
+                "reference": "d42785840519401ed2113292263795eb4c0f95da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3946ac38410be7440186c6e74584f31b15107fc7",
-                "reference": "3946ac38410be7440186c6e74584f31b15107fc7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d42785840519401ed2113292263795eb4c0f95da",
+                "reference": "d42785840519401ed2113292263795eb4c0f95da",
                 "shasum": ""
             },
             "require": {
@@ -10952,7 +10878,7 @@
                 "phpunit/php-timer": "^7.0.1",
                 "sebastian/cli-parser": "^3.0.2",
                 "sebastian/code-unit": "^3.0.2",
-                "sebastian/comparator": "^6.3.0",
+                "sebastian/comparator": "^6.3.1",
                 "sebastian/diff": "^6.0.2",
                 "sebastian/environment": "^7.2.0",
                 "sebastian/exporter": "^6.3.0",
@@ -11003,7 +10929,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.11"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.12"
             },
             "funding": [
                 {
@@ -11019,7 +10945,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-05T07:36:02+00:00"
+            "time": "2025-03-07T07:31:03+00:00"
         },
         {
             "name": "roave/security-advisories",
@@ -12070,16 +11996,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "6.3.0",
+            "version": "6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "d4e47a769525c4dd38cea90e5dcd435ddbbc7115"
+                "reference": "24b8fbc2c8e201bb1308e7b05148d6ab393b6959"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/d4e47a769525c4dd38cea90e5dcd435ddbbc7115",
-                "reference": "d4e47a769525c4dd38cea90e5dcd435ddbbc7115",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/24b8fbc2c8e201bb1308e7b05148d6ab393b6959",
+                "reference": "24b8fbc2c8e201bb1308e7b05148d6ab393b6959",
                 "shasum": ""
             },
             "require": {
@@ -12098,7 +12024,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.2-dev"
+                    "dev-main": "6.3-dev"
                 }
             },
             "autoload": {
@@ -12138,7 +12064,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
                 "security": "https://github.com/sebastianbergmann/comparator/security/policy",
-                "source": "https://github.com/sebastianbergmann/comparator/tree/6.3.0"
+                "source": "https://github.com/sebastianbergmann/comparator/tree/6.3.1"
             },
             "funding": [
                 {
@@ -12146,7 +12072,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-01-06T10:28:19+00:00"
+            "time": "2025-03-07T06:57:01+00:00"
         },
         {
             "name": "sebastian/complexity",
