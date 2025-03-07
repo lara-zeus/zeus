@@ -8,7 +8,7 @@ return [
      *
      * breeze, daisy, another-portfolio
      */
-    //'theme' => 'another-portfolio',
+    // 'theme' => 'another-portfolio',
 
     /**
      * set the default layout component
@@ -19,7 +19,7 @@ return [
      * zeus::themes.daisy.layouts.app
      * zeus::themes.another-portfolio.layouts.app
      */
-    //'layout' => 'zeus::themes.another-portfolio.layouts.app',
+    // 'layout' => 'zeus::themes.another-portfolio.layouts.app',
 
     'theme' => 'zeus',
     'layout' => 'zeus::components.app',
