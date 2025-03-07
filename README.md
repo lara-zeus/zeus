@@ -17,7 +17,7 @@ provide you with a collection of Laravel packages and filament plugins that help
 ## Intro
 This project is a standalone app, a Starter Kit; it's pre-configured to run all Zeus packages and some extra perks.
 
-- Layout and Widget manager using  [lara Zeus Rain](https://larazeus.com/rain)
+- Layout and Widget manager using  [lara Zeus dynamic dashboard](https://larazeus.com/dynamic-dashboard)
 - Posts and pages using  [lara Zeus Sky](https://larazeus.com/sky)
 - FAQ and library (images, videos, and files) using  [lara Zeus Sky](https://larazeus.com/sky)
 - Contact us form with departments using  [lara Zeus Wind](https://larazeus.com/wind)
