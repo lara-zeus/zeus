@@ -1,5 +1,13 @@
 # All Changelog
 
+## v3.1.1 - 2025-03-07
+
+### What's Changed
+
+* Update sky by @atmonshi in https://github.com/lara-zeus/zeus/pull/21
+
+**Full Changelog**: https://github.com/lara-zeus/zeus/compare/v3.1.0...v3.1.1
+
 ## v3.1.0 - 2025-03-07
 
 ### What's Changed
