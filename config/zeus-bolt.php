@@ -25,7 +25,7 @@ return [
     /**
      * you can overwrite any model and use your own
      * you can also configure the model per panel in your panel provider using:
-     * ->skyModels([ ... ])
+     * ->models([ ... ])
      */
     'models' => [
         'Category' => \LaraZeus\Bolt\Models\Category::class,
