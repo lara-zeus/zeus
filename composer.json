@@ -20,7 +20,7 @@
         "lara-zeus/dynamic-dashboard": "^3.0",
         "lara-zeus/sky": "^3.4",
         "lara-zeus/wind": "^3.2",
-        "laravel/framework": "^12.9",
+        "laravel/framework": "^12.1",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9"
     },
