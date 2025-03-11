@@ -17,7 +17,7 @@ export default {
         // Lara Zeus
         './vendor/lara-zeus/**/*.blade.php',
         './src/CoreServiceProvider.php',
-        './vendor/lara-zeus/rain/src/Models/Columns.php',
+        './vendor/lara-zeus/dynamic-dashboard/src/Models/Columns.php',
         './vendor/lara-zeus/sky/src/Models/PostStatus.php',
         './vendor/lara-zeus/wind/src/Filament/Resources/LetterResource.php',
         './vendor/lara-zeus/core/src/CoreServiceProvider.php',
