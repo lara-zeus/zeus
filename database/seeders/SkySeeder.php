@@ -17,7 +17,7 @@ class SkySeeder extends Seeder
             ->count(15)
             ->create();
 
-        foreach (SkyPlugin::get()->getModel('Post')::all() as $post) { // loop through all posts
+        foreach (SkyPlugin::get()->getModel('Post')::all() as $post) {
             $random_tags = SkyPlugin::get()->getModel('Tag')::all()->random(1)->first()->name;
             $post->syncTagsWithType([$random_tags], 'category');
         }
@@ -40,7 +40,7 @@ class SkySeeder extends Seeder
             ->count(8)
             ->create();
 
-        foreach (SkyPlugin::get()->getModel('Library')::all() as $library) { // loop through all library
+        foreach (SkyPlugin::get()->getModel('Library')::all() as $library) {
             $random_tags = SkyPlugin::get()->getModel('Tag')::getWithType('library')->random(1)->first()->name;
             $library->syncTagsWithType([$random_tags], 'library');
         }

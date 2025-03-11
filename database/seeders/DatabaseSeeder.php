@@ -10,23 +10,26 @@ class DatabaseSeeder extends Seeder
 {
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'Zeus',
-            'email' => 'info@larazeus.com',
-            'password' => Hash::make('zeus#larazeus'),
-        ]);
+        DB::table('users')
+            ->insert([
+                'name' => 'Zeus',
+                'email' => 'info@larazeus.com',
+                'password' => Hash::make('zeus#larazeus'),
+            ]);
 
-        DB::table('users')->insert([
-            'name' => 'spammer',
-            'email' => 'spammer@larazeus.com',
-            'password' => Hash::make('spammerspammerspammer'),
-        ]);
+        DB::table('users')
+            ->insert([
+                'name' => 'spammer',
+                'email' => 'spammer@larazeus.com',
+                'password' => Hash::make('spammerspammerspammer'),
+            ]);
 
-        DB::table('users')->insert([
-            'name' => 'the printer magician',
-            'email' => 'printer-god@larazeus.com',
-            'password' => Hash::make('printerMagician'),
-        ]);
+        DB::table('users')
+            ->insert([
+                'name' => 'the printer magician',
+                'email' => 'printer-god@larazeus.com',
+                'password' => Hash::make('printerMagician'),
+            ]);
 
         $this->call([
             WindSeeder::class,
