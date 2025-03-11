@@ -4,13 +4,15 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use LaraZeus\DynamicDashboard\Widgets\Classes\HeadingWidget;
+use LaraZeus\DynamicDashboard\Widgets\Classes\ImageWidget;
 
 class RainSeeder extends Seeder
 {
     /**
      * @throws \JsonException
      */
-    public function run()
+    public function run(): void
     {
         DB::table('layouts')
             ->insertGetId([
@@ -24,7 +26,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'widget' => HeadingWidget::class,
                                 'content' => 'no title top column content',
                             ],
                         ],
@@ -35,7 +37,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => 'left column',
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'widget' => HeadingWidget::class,
                                 'content' => 'left column',
                             ],
                         ],
@@ -46,7 +48,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\ImageWidget",
+                                'widget' => ImageWidget::class,
                                 'url' => 'https://picsum.photos/600/400?random=1',
                                 'alt' => 'alt',
                             ],
@@ -58,7 +60,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => 'right column',
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'widget' => HeadingWidget::class,
                                 'content' => 'right column',
                             ],
                         ],
@@ -69,12 +71,12 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'widget' => HeadingWidget::class,
                                 'content' => 'no title bottom column content',
                             ],
                         ],
                     ],
-                ]),
+                ], JSON_THROW_ON_ERROR),
                 'created_at' => now(),
             ]);
     }
