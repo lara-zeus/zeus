@@ -18,7 +18,7 @@
     @filamentStyles
     @stack('styles')
 
-    <link rel="stylesheet" href="{{ asset('vendor/zeus/frontend.css') }}">
+    @vite('resources/css/app.css')
 
     <style>
         * {font-family: 'KoHo', 'Almarai', sans-serif;}
