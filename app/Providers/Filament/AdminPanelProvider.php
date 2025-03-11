@@ -92,7 +92,7 @@ class AdminPanelProvider extends PanelProvider
 
             DynamicDashboardPlugin::make()
                 ->navigationGroupLabel('Site')
-                ->defaultLayout('new-page'),
+                ->setDefaultLayout('new-page'),
 
             SpatieLaravelTranslatablePlugin::make()
                 ->defaultLocales([config('app.locale')]),
