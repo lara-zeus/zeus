@@ -8,6 +8,7 @@
 [![Code Style](https://img.shields.io/github/actions/workflow/status/lara-zeus/zeus/fix-php-code-style-issues.yml?label=code-style&flat-square)](https://github.com/lara-zeus/zeus/actions?query=workflow%3Afix-php-code-style-issues+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/lara-zeus/zeus.svg?style=flat-square)](https://packagist.org/packages/lara-zeus/zeus)
 [![Total Downloads](https://img.shields.io/github/stars/lara-zeus/zeus?style=flat-square)](https://github.com/lara-zeus/zeus)
+<a href="https://herd.laravel.com/new/lara-zeus/zeus?name=zeus"><img src="https://img.shields.io/badge/Install%20with%20Herd-f55247?logo=laravel&logoColor=white"></a>
 
 </p>
 
@@ -15,7 +16,7 @@
 provide you with a collection of Laravel packages and filament plugins that help you build your site faster and focus on your business
 
 # Open in Herd:
-if you;re using [laravel herd](https://herd.laravel.com/), [start creating using the link](herd://create-site?starter-kit=lara-zeus/zeus&name=zeus):
+if you;re using [laravel herd](https://herd.laravel.com/), [start creating using the link](https://herd.laravel.com/new/lara-zeus/zeus?name=zeus):
 herd://create-site?starter-kit=lara-zeus/zeus&name=zeus
 
 ## Intro
