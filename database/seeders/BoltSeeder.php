@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class BoltSeeder extends Seeder
 {
@@ -109,6 +110,7 @@ class BoltSeeder extends Seeder
             'section_id' => $section1,
             'ordering' => 1,
             'options' => json_encode([
+                'htmlId' => Str::random(6),
                 'dateType' => 'string',
                 'is_required' => true,
             ], JSON_THROW_ON_ERROR),
@@ -120,6 +122,7 @@ class BoltSeeder extends Seeder
             'section_id' => $section1,
             'ordering' => 2,
             'options' => json_encode([
+                'htmlId' => Str::random(6),
                 'dateType' => 'email',
                 'is_required' => true,
             ], JSON_THROW_ON_ERROR),
@@ -131,6 +134,7 @@ class BoltSeeder extends Seeder
             'section_id' => $section2,
             'ordering' => 1,
             'options' => json_encode([
+                'htmlId' => Str::random(6),
                 'dataSource' => '1',
                 'is_required' => true,
                 'is_inline' => true,
@@ -143,6 +147,7 @@ class BoltSeeder extends Seeder
             'section_id' => $section2,
             'ordering' => 2,
             'options' => json_encode([
+                'htmlId' => Str::random(6),
                 'dataSource' => '2',
                 'is_required' => true,
             ], JSON_THROW_ON_ERROR),
