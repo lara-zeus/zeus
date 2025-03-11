@@ -24,7 +24,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'widget' => "LaraZeus\DynamicDashboard\Widgets\Classes\HeadingWidget",
                                 'content' => 'no title top column content',
                             ],
                         ],
@@ -35,7 +35,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => 'left column',
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'widget' => "LaraZeus\DynamicDashboard\Widgets\Classes\HeadingWidget",
                                 'content' => 'left column',
                             ],
                         ],
@@ -46,7 +46,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\ImageWidget",
+                                'widget' => "LaraZeus\DynamicDashboard\Widgets\Classes\ImageWidget",
                                 'url' => 'https://picsum.photos/600/400?random=1',
                                 'alt' => 'alt',
                             ],
@@ -58,7 +58,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => 'right column',
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'widget' => "LaraZeus\DynamicDashboard\Widgets\Classes\HeadingWidget",
                                 'content' => 'right column',
                             ],
                         ],
@@ -69,7 +69,7 @@ class RainSeeder extends Seeder
                             'data' => [
                                 'title' => null,
                                 'sort' => 1,
-                                'widget' => "LaraZeus\Rain\Widgets\Classes\HeadingWidget",
+                                'widget' => "LaraZeus\DynamicDashboard\Widgets\Classes\HeadingWidget",
                                 'content' => 'no title bottom column content',
                             ],
                         ],
