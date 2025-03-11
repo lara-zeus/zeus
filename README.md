@@ -17,7 +17,7 @@ provide you with a collection of Laravel packages and filament plugins that help
 
 # Open in Herd:
 if you;re using [laravel herd](https://herd.laravel.com/), [start creating using the link](https://herd.laravel.com/new/lara-zeus/zeus?name=zeus):
-herd://create-site?starter-kit=lara-zeus/zeus&name=zeus
+https://herd.laravel.com/new/lara-zeus/zeus?name=zeus
 
 ## Intro
 This project is a standalone app, a Starter Kit; it's pre-configured to run all Zeus packages and some extra perks.
