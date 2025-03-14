@@ -3,7 +3,6 @@
 <p align="center">
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/lara-zeus/zeus.svg?style=flat-square)](https://packagist.org/packages/lara-zeus/zeus)
-[![Tests](https://img.shields.io/github/actions/workflow/status/lara-zeus/zeus/run-tests.yml?label=tests&style=flat-square&branch=main)](https://github.com/lara-zeus/zeus/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Code Style](https://img.shields.io/github/actions/workflow/status/lara-zeus/zeus/fix-php-code-style-issues.yml?label=code-style&flat-square)](https://github.com/lara-zeus/zeus/actions?query=workflow%3Afix-php-code-style-issues+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/lara-zeus/zeus.svg?style=flat-square)](https://packagist.org/packages/lara-zeus/zeus)
 [![Total Downloads](https://img.shields.io/github/stars/lara-zeus/zeus?style=flat-square)](https://github.com/lara-zeus/zeus)
