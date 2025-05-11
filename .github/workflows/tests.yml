@@ -23,15 +23,12 @@ jobs:
         include:
           - php: 8.2
             openspout: 4.28.5
-            filament: 3.1.47
           - php: 8.3
             openspout: ^4.0
-            filament: ^3.3
           - php: 8.4
             openspout: ^4.0
-            filament: ^3.3
 
-    name: PHP ${{ matrix.php }} - O${{ matrix.openspout }} - F${{ matrix.filament }}
+    name: PHP ${{ matrix.php }} - O${{ matrix.openspout }}
 
     steps:
       - name: Checkout code
@@ -46,7 +43,7 @@ jobs:
 
       - name: Install Composer dependencies
         run: |
-          composer require "openspout/openspout:${{ matrix.openspout }}" "filament/filament:${{ matrix.filament }}" --no-interaction --no-update
+          composer require "openspout/openspout:${{ matrix.openspout }}" --no-interaction --no-update
           composer update --prefer-dist --no-interaction --no-progress
 
       - name: Copy environment file
