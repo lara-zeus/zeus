@@ -22,9 +22,9 @@ jobs:
         php: [8.2, 8.3, 8.4]
         include:
           - php: 8.2
-            openspout: 3.0
+            openspout: ^3.0
           - php: 8.3
-            openspout: 4.0
+            openspout: ^4.0
 
     name: PHP ${{ matrix.php }} - O${{ matrix.openspout }}
 
@@ -43,7 +43,6 @@ jobs:
         run: |
           composer require "openspout/openspout:${{ matrix.openspout }}"  --no-interaction --no-update
           composer update --prefer-dist --no-interaction --no-progress
-  
 
       - name: Copy environment file
         run: cp .env.example .env
