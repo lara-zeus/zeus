@@ -23,7 +23,7 @@ jobs:
         include:
           - php: 8.2
             openspout: ^3.0
-            filament: 3.2.142
+            filament: 3.1.47
           - php: 8.3
             openspout: ^4.0
             filament: ^3.3
