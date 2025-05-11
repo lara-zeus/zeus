@@ -24,14 +24,17 @@ jobs:
           - php: 8.2
             openspout: ^3.0
             filament: 3.1.47
+            shield: ^3.2
           - php: 8.3
             openspout: ^4.0
             filament: ^3.3
+            shield: ^3.3
           - php: 8.4
             openspout: ^4.0
             filament: ^3.3
+            shield: ^3.3
 
-    name: PHP ${{ matrix.php }} - O${{ matrix.openspout }} - F${{ matrix.filament }}
+    name: PHP ${{ matrix.php }} - O${{ matrix.openspout }} - F${{ matrix.filament }} - S${{ matrix.shield }}
 
     steps:
       - name: Checkout code
@@ -46,7 +49,7 @@ jobs:
 
       - name: Install Composer dependencies
         run: |
-          composer require "openspout/openspout:${{ matrix.openspout }}" "filament/filament:${{ matrix.filament }}" --no-interaction --no-update
+          composer require "openspout/openspout:${{ matrix.openspout }}" "filament/filament:${{ matrix.filament }}" "bezhansalleh/filament-shield:${{ matrix.shield }}"  --no-interaction --no-update
           composer update --prefer-dist --no-interaction --no-progress
 
       - name: Copy environment file
