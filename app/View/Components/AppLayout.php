@@ -12,6 +12,7 @@ class AppLayout extends Component
      */
     public function render(): View
     {
+        // add test
         return view('layouts.app');
     }
 }
