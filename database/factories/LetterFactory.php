@@ -2,19 +2,14 @@
 
 namespace Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Attributes\UseModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use LaraZeus\Wind\Models\Department;
 use LaraZeus\Wind\Models\Letter;
 
+#[UseModel(Letter::class)]
 class LetterFactory extends Factory
 {
-    /**
-     * The name of the factory's corresponding model.
-     *
-     * @var string
-     */
-    protected $model = Letter::class;
-
     /**
      * Define the model's default state.
      *

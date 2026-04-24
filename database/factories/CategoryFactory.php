@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Attributes\UseModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use LaraZeus\Bolt\Models\Category;
 
+#[UseModel(Category::class)]
 class CategoryFactory extends Factory
 {
-    protected $model = Category::class;
-
     /**
      * Define the model's default state.
      *

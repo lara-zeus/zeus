@@ -2,14 +2,14 @@
 
 namespace Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Attributes\UseModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use LaraZeus\Bolt\Models\Form;
 use LaraZeus\Bolt\Models\Section;
 
+#[UseModel(Section::class)]
 class SectionFactory extends Factory
 {
-    protected $model = Section::class;
-
     /**
      * Define the model's default state.
      */
