@@ -19,7 +19,6 @@ class User extends Authenticatable implements FilamentUser, MustVerifyEmail
 {
     use CanResetPassword, HasApiTokens, HasFactory, HasRoles, Notifiable;
 
-
     /**
      * Get the attributes that should be cast.
      *
