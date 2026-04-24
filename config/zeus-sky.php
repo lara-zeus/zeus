@@ -52,10 +52,9 @@ return [
 
     /**
      * the default editor for pages and posts, Available:
-     * \LaraZeus\Sky\Editors\TipTapEditor::class,
      * \LaraZeus\Sky\Editors\TinyEditor::class,
      * \LaraZeus\Sky\Editors\MarkdownEditor::class,
      * \LaraZeus\Sky\Editors\RichEditor::class,
      */
-    'editor' => \LaraZeus\Sky\Editors\TipTapEditor::class,
+    'editor' => \LaraZeus\Sky\Editors\RichEditor::class,
 ];
