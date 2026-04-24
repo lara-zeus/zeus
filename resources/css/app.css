@@ -1,5 +1,6 @@
 @import '../../vendor/lara-zeus/core/resources/css/_checkbox-cards.css'
   layer(base);
+@import '../../vendor/filament/filament/resources/css/theme.css';
 
 @import 'tailwindcss';
 
@@ -11,6 +12,8 @@
 @source '../../vendor/lara-zeus/**/*.blade.php';
 @source '../../vendor/lara-zeus/wind/src/Filament/Resources/LetterResource.php';
 @source '../../vendor/lara-zeus/core/src/CoreServiceProvider.php';
+@source "../../vendor/lara-zeus/sky/resources/views/themes/**/*.blade.php";
+@source "../../vendor/lara-zeus/bolt/resources/views/themes/**/*.blade.php";
 
 @theme {
   --color-gray-50: #fafaf9;
