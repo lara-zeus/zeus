@@ -1,3 +1,10 @@
 @import '../../../../vendor/filament/filament/resources/css/theme.css';
 
-@config './tailwind.config.js';
+@source '../../../../vendor/filament/**/*.blade.php';
+@source '../../../../vendor/lara-zeus/**/*.blade.php';
+@source '../../../../vendor/lara-zeus/wind/src/Filament/Resources/LetterResource.php';
+@source '../../../../vendor/lara-zeus/bolt/resources/views/filament/**/*.blade.php';
+@source '../../../../vendor/lara-zeus/bolt/resources/views/filament/**/*.blade.php';
+@source '../../../../vendor/lara-zeus/dynamic-dashboard/resources/views/filament/**/*.blade.php';
+@source '../../../../vendor/lara-zeus/wind/src/Filament/Resources/LetterResource.php';
+@source '../../../../vendor/lara-zeus/core/src/CoreServiceProvider.php';

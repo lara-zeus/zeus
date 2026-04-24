@@ -14,14 +14,14 @@
         "@tailwindcss/typography": "^0.5.10",
         "alpinejs": "^3.12.2",
         "autoprefixer": "^10.4.16",
+        "concurrently": "^9.0.1",
         "laravel-vite-plugin": "^2.0.0",
         "postcss": "^8.4.30",
         "postcss-import": "^15.1.0",
-        "tailwindcss": "^3.3.3",
+        "tailwindcss": "^4.2.4",
         "tailwindcss-debug-screens": "^2.2.1",
         "tippy.js": "^6.3.7",
-        "vite": "^7.0.7",
-        "concurrently": "^9.0.1"
+        "vite": "^7.0.7"
     },
     "$schema": "https://www.schemastore.org/package.json"
 }
