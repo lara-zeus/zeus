@@ -1,108 +1,75 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Policies;
 
-use App\Models\User;
-use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Foundation\Auth\User as AuthUser;
 use LaraZeus\Wind\Models\Letter;
+use Illuminate\Auth\Access\HandlesAuthorization;
 
 class LetterPolicy
 {
     use HandlesAuthorization;
-
-    /**
-     * Determine whether the user can view any models.
-     */
-    public function viewAny(User $user): bool
+    
+    public function viewAny(AuthUser $authUser): bool
     {
-        return $user->can('view_any_letter');
+        return $authUser->can('ViewAny:Letter');
     }
 
-    /**
-     * Determine whether the user can view the model.
-     */
-    public function view(User $user, Letter $letter): bool
+    public function view(AuthUser $authUser, Letter $letter): bool
     {
-        return $user->can('view_letter');
+        return $authUser->can('View:Letter');
     }
 
-    /**
-     * Determine whether the user can create models.
-     */
-    public function create(User $user): bool
+    public function create(AuthUser $authUser): bool
     {
-        return $user->can('create_letter');
+        return $authUser->can('Create:Letter');
     }
 
-    /**
-     * Determine whether the user can update the model.
-     */
-    public function update(User $user, Letter $letter): bool
+    public function update(AuthUser $authUser, Letter $letter): bool
     {
-        return $user->can('update_letter');
+        return $authUser->can('Update:Letter');
     }
 
-    /**
-     * Determine whether the user can delete the model.
-     */
-    public function delete(User $user, Letter $letter): bool
+    public function delete(AuthUser $authUser, Letter $letter): bool
     {
-        return $user->can('delete_letter');
+        return $authUser->can('Delete:Letter');
     }
 
-    /**
-     * Determine whether the user can bulk delete.
-     */
-    public function deleteAny(User $user): bool
+    public function deleteAny(AuthUser $authUser): bool
     {
-        return $user->can('delete_any_letter');
+        return $authUser->can('DeleteAny:Letter');
     }
 
-    /**
-     * Determine whether the user can permanently delete.
-     */
-    public function forceDelete(User $user, Letter $letter): bool
+    public function restore(AuthUser $authUser, Letter $letter): bool
     {
-        return $user->can('force_delete_letter');
+        return $authUser->can('Restore:Letter');
     }
 
-    /**
-     * Determine whether the user can permanently bulk delete.
-     */
-    public function forceDeleteAny(User $user): bool
+    public function forceDelete(AuthUser $authUser, Letter $letter): bool
     {
-        return $user->can('force_delete_any_letter');
+        return $authUser->can('ForceDelete:Letter');
     }
 
-    /**
-     * Determine whether the user can restore.
-     */
-    public function restore(User $user, Letter $letter): bool
+    public function forceDeleteAny(AuthUser $authUser): bool
     {
-        return $user->can('restore_letter');
+        return $authUser->can('ForceDeleteAny:Letter');
     }
 
-    /**
-     * Determine whether the user can bulk restore.
-     */
-    public function restoreAny(User $user): bool
+    public function restoreAny(AuthUser $authUser): bool
     {
-        return $user->can('restore_any_letter');
+        return $authUser->can('RestoreAny:Letter');
     }
 
-    /**
-     * Determine whether the user can replicate.
-     */
-    public function replicate(User $user, Letter $letter): bool
+    public function replicate(AuthUser $authUser, Letter $letter): bool
     {
-        return $user->can('replicate_letter');
+        return $authUser->can('Replicate:Letter');
     }
 
-    /**
-     * Determine whether the user can reorder.
-     */
-    public function reorder(User $user): bool
+    public function reorder(AuthUser $authUser): bool
     {
-        return $user->can('reorder_letter');
+        return $authUser->can('Reorder:Letter');
     }
+
 }
