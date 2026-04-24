@@ -13,7 +13,7 @@ class ShieldSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
 

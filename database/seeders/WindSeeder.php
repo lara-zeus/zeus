@@ -8,7 +8,7 @@ use LaraZeus\Wind\Models\Letter;
 
 class WindSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
         $department = DB::table('departments')
             ->insertGetId([
