@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Attributes\UseModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use LaraZeus\Bolt\Models\Category;
 
+#[UseModel(Category::class)]
 class CategoryFactory extends Factory
 {
-    protected $model = Category::class;
-
     /**
      * Define the model's default state.
      *
@@ -22,7 +22,7 @@ class CategoryFactory extends Factory
             'ordering' => $this->faker->numberBetween(1, 10),
             'is_active' => 1,
             'description' => $this->faker->words(5, true),
-            'slug' => $this->faker->slug,
+            'slug' => $this->faker->slug(),
         ];
     }
 }

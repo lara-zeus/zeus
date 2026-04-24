@@ -2,15 +2,15 @@
 
 namespace Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Attributes\UseModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use LaraZeus\Bolt\Models\Field;
 use LaraZeus\Bolt\Models\Form;
 use LaraZeus\Bolt\Models\Response;
 
+#[UseModel(\LaraZeus\Bolt\Models\FieldResponse::class)]
 class FieldResponseFactory extends Factory
 {
-    protected $model = \LaraZeus\Bolt\Models\FieldResponse::class;
-
     /**
      * Define the model's default state.
      */

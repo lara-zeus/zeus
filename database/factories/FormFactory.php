@@ -3,13 +3,13 @@
 namespace Database\Factories;
 
 use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\Attributes\UseModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use LaraZeus\Bolt\Models\Category;
 
+#[UseModel(\LaraZeus\Bolt\Models\Form::class)]
 class FormFactory extends Factory
 {
-    protected $model = \LaraZeus\Bolt\Models\Form::class;
-
     /**
      * Define the model's default state.
      */

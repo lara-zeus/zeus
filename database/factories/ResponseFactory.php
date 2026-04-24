@@ -2,14 +2,14 @@
 
 namespace Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Attributes\UseModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use LaraZeus\Bolt\Models\Form;
 use LaraZeus\Bolt\Models\Response;
 
+#[UseModel(Response::class)]
 class ResponseFactory extends Factory
 {
-    protected $model = Response::class;
-
     /**
      * Define the model's default state.
      */

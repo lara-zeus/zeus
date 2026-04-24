@@ -2,18 +2,13 @@
 
 namespace Database\Factories;
 
+use Illuminate\Database\Eloquent\Factories\Attributes\UseModel;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use LaraZeus\Wind\Models\Department;
 
+#[UseModel(Department::class)]
 class DepartmentFactory extends Factory
 {
-    /**
-     * The name of the factory's corresponding model.
-     *
-     * @var string
-     */
-    protected $model = Department::class;
-
     /**
      * Define the model's default state.
      *
@@ -27,7 +22,7 @@ class DepartmentFactory extends Factory
             'ordering' => $this->faker->numberBetween(1, 10),
             'is_active' => $this->faker->numberBetween(0, 1),
             'desc' => $this->faker->words(5, true),
-            'slug' => $this->faker->slug,
+            'slug' => $this->faker->slug(),
             'logo' => 'https://picsum.photos/150/150?random='.$this->faker->randomNumber(),
         ];
     }
