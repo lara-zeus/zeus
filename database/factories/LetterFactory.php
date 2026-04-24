@@ -24,8 +24,8 @@ class LetterFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name,
-            'email' => $this->faker->email,
+            'name' => $this->faker->name(),
+            'email' => $this->faker->email(),
             'department_id' => Department::factory(),
             'title' => $this->faker->words(3, true),
             'message' => $this->faker->words(5, true),
