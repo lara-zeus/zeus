@@ -17,8 +17,8 @@ class LibraryFactory extends Factory
     {
         return [
             'slug' => $this->faker->slug(2),
-            'title' => $this->faker->word,
-            'description' => $this->faker->sentence,
+            'title' => $this->faker->word(),
+            'description' => $this->faker->sentence(),
             'type' => $this->faker->randomElement(array_keys(SkyPlugin::get()->getLibraryTypes())),
             'file_path' => 'https://picsum.photos/1200/1200?random='.$this->faker->randomNumber(),
         ];
